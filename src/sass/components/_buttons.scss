@@ -1,0 +1,21 @@
+.button {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: $white-color;
+  background: $button-color;
+  border-radius: 25px;
+
+  @media screen and (min-width: $desktop) {
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+  }
+}

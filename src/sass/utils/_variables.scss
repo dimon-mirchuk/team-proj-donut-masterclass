@@ -1,3 +1,5 @@
+// Colors
+
 $main-text-color: #2e2520;
 $white-color: #ffffff;
 $black-color: #000000;
@@ -6,3 +8,18 @@ $main-bg-color: #fffff9;
 $secondary-bg-color: #fef3e4;
 $button-color: #ab816c;
 $icon-color: #674d40;
+$current-page-color: #876655;
+
+// Sizes
+
+$mobile: 320px;
+$mobile-max: 768.9px;
+$tablet: 769px;
+$tablet-max: 1279.9px;
+$desktop: 1280px;
+
+//Other
+
+$secondary-font: Caveat Brush, sans-serif;
+$duration: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
