@@ -1,0 +1,22 @@
+.social-links {
+  display: flex;
+}
+
+.social-links__icon {
+  height: 19px;
+  width: 24px;
+  fill: $main-text-color;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social-links__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}

@@ -12,12 +12,17 @@
   font-size: 18px;
   text-align: center;
   color: $white-color;
-  background: $button-color;
+  background-color: $button-color;
   border-radius: 25px;
 
   @media screen and (min-width: $desktop) {
     min-width: 158px;
     height: 45px;
     font-size: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
 }
