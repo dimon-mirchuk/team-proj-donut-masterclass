@@ -2,6 +2,13 @@
   outline: 1px solid red;
 }
 
-.about-us__text:not(:last-child) {
-  margin-bottom: 21px;
+.about-us__text:not(:nth-child(1)) {
+  margin-top: 21px;
+}
+
+.about-us__link {
+  font-family: Caveat Brush;
+  font-size: 18px;
+  line-height: 3.61;
+  color: $placeholder-color;
 }
