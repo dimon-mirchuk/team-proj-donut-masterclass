@@ -1,0 +1,7 @@
+.about-us__section {
+  outline: 1px solid red;
+}
+
+.about-us__text:not(:last-child) {
+  margin-bottom: 21px;
+}
