@@ -1,6 +1,8 @@
 .button {
-  width: 145px;
+  min-width: 145px;
   height: 40px;
+  padding-left: 44px;
+  padding-right: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +16,7 @@
   border-radius: 25px;
 
   @media screen and (min-width: $desktop) {
-    width: 158px;
+    min-width: 158px;
     height: 45px;
     font-size: 24px;
   }
