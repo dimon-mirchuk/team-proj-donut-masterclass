@@ -5,7 +5,7 @@
   }
 }
 .registration__title-mob {
-  margin-top: 15px;
+  // padding-top: 15px;
   margin-bottom: 11px;
   @media screen and (min-width: $tablet) {
     display: none;
@@ -23,18 +23,24 @@
   }
 }
 .registration__price {
+  line-height: 1.22;
   @extend .registration__information;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.09;
   }
 }
 .registration__information--city {
   margin-bottom: 25px;
+  line-height: 1.22;
   @media screen and (min-width: $tablet) {
     margin-bottom: 34px;
   }
   @media screen and (min-width: $desktop) {
+    line-height: 1.2;
     margin-bottom: 30px;
   }
 }
@@ -45,19 +51,21 @@
 }
 .registration__form-text {
   margin-bottom: 17px;
-  max-width: 292px;
+
   font-size: 16px;
   text-align: center;
   line-height: 1.25;
   @media screen and (min-width: $tablet) {
+    margin-bottom: 13px;
+    max-width: 292px;
     text-align: left;
     font-size: 18px;
     line-height: 1.22;
   }
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 13px;
-    text-align: left;
-  }
+  // @media screen and (min-width: $tablet) {
+
+  //   text-align: left;
+  // }
 }
 .registration__field::placeholder {
   font-size: 16px;
@@ -101,6 +109,7 @@
 }
 .registration__container {
   position: relative;
+  padding-top: 15px;
 
   background: $main-bg-color;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
@@ -114,7 +123,7 @@
     border-radius: 150px;
   }
 }
-.container__registration:first-child {
+.container__registration--geometry {
   // width: auto;
   @media screen and (min-width: $tablet) {
     margin-right: 30px;
@@ -140,6 +149,9 @@
   /* background-color: red; */
   position: absolute;
 
+  @media screen and (max-width: $mobile-max) {
+    top: 202px;
+  }
   @media screen and (min-width: $tablet) {
     left: 209px;
     bottom: 35px;
