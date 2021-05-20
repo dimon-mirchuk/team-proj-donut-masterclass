@@ -13,9 +13,12 @@
     width: 392px;
   }
 }
-//не работает псевдокласс
+
 .about-us__text {
   margin-top: 21px;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .about-us__link {
