@@ -1,3 +1,15 @@
+.section-program {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.right {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
 .section-text {
   margin-bottom: 10px;
   font-family: Montserrat;
@@ -43,10 +55,23 @@
   padding: 0;
 }
 
-.features-list {
+// Features
+
+.features {
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+.features-list {
   padding: 0;
+}
+.features-list + .features-list {
+  margin-left: 6px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 15px;
+  }
 }
 .features-list__item {
   width: 142px;
@@ -57,14 +82,71 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0 0 57px 0;
-  padding: 49px 0 40px;
+
+  padding: 49px 0 9px;
+  position: relative;
+}
+.features-list__item:not(:last-child) {
+  margin-bottom: 57px;
 }
 .donut-one::before {
+  position: absolute;
   content: '';
   display: block;
+  height: 84px;
+  width: 77px;
   background-repeat: no-repeat;
-  // background-image: url(../../images/Program-donuts/mobile-donut-1.png);
+  background-image: url(../images/Program-donuts/mobile-donut-1.png);
+  background-position: center;
+  top: -34px;
+  left: 32px;
+}
+.donut-two {
+  margin-top: 25px;
+}
+.donut-two::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 84px;
+  width: 77px;
+  background-repeat: no-repeat;
+  background-image: url(../images/Program-donuts/mobile-donut-2.png);
+  background-position: center;
+  top: -34px;
+  left: 32px;
+}
+.donut-three::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 84px;
+  width: 77px;
+  background-repeat: no-repeat;
+  background-image: url(../images/Program-donuts/mobile-donut-3.png);
+  background-position: center;
+  top: -34px;
+  left: 32px;
+}
+.donut-four::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 84px;
+  width: 77px;
+  background-repeat: no-repeat;
+  background-image: url(../images/Program-donuts/mobile-donut-4.png);
+  background-position: center;
+  top: -34px;
+  left: 32px;
+}
+.item-icon {
+  display: block;
+  height: 18px;
+  width: 19px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 .item-title {
   font-family: $secondary-font;
@@ -78,4 +160,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
