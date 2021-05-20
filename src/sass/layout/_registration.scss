@@ -11,9 +11,9 @@
     display: none;
   }
 }
-// .registration {
-//   line-height: 1.22;
-// }
+.registration {
+  position: relative;
+}
 .registration__information {
   font-weight: 500;
   font-size: 20px;
@@ -176,5 +176,17 @@
 
   @media screen and (min-width: $tablet) {
     display: block;
+  }
+}
+.registration-donut {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: 69px;
   }
 }
