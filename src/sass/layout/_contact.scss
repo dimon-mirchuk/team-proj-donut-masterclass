@@ -1,7 +1,12 @@
 .contact__text {
   text-align: center;
   font-size: 18px;
-  line-height: 3.6;
+  margin-bottom: 20px;
+  // margin 20px взято из расчёта, что line-height из макета по просьбе не был взят, используется стандартный 1,25. input имеет свой padding 1px. А всего у нас должно получиться расстояние 27px по макету, такое же как между input и button. Они равны, мерила линейкой)
+
+  @media screen and (max-width: $tablet) {
+    font-size: 16px;
+  }
 }
 
 .contakt__form {
@@ -29,5 +34,7 @@
 }
 
 .contact__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
   color: rgba(171, 129, 108, 0.5);
 }

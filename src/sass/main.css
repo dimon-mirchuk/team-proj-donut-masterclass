@@ -189,7 +189,13 @@ button {
 .contact__text {
   text-align: center;
   font-size: 18px;
-  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .contact__text {
+    font-size: 16px;
+  }
 }
 
 .contakt__form {
@@ -200,5 +206,48 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 27px;
+  width: 145px;
+}
+
+.contact__input {
+  background-color: inherit;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ab816c;
+}
+
+.contact__input:first-child {
+  margin-bottom: 15px;
+}
+
+.contact__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.contact__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.contact__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.contact__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
