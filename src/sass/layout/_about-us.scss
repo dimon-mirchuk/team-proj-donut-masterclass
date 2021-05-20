@@ -10,12 +10,13 @@
   font-family: Caveat Brush;
   font-size: 18px;
   line-height: 3.61;
-  color: $placeholder-color;
+  color: $button-color;
 }
 .about-us__wrapper::before {
+  height: 290px;
   content: '';
   display: block;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   background-image: url(../images/About-us/mobile-box-cofee-donuts.png);
