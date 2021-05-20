@@ -114,6 +114,25 @@ button {
   overflow: hidden;
 }
 
+.body__background {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top, center bottom 216px;
+  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+}
+
+@media screen and (min-width: 769px) {
+  .body__background {
+    background-position: center top, center bottom 63px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .body__background {
+    background-position: center top, center bottom -101px;
+  }
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
