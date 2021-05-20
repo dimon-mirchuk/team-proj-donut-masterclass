@@ -109,6 +109,9 @@
 }
 .registration__container {
   position: relative;
+  // padding: 0 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 15px;
 
   background: $main-bg-color;
@@ -116,7 +119,8 @@
   border-radius: 150px 150px 0px 0px;
   @media screen and (min-width: $tablet) {
     display: flex;
-
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 54px;
     padding-bottom: 53px;
 
@@ -134,18 +138,19 @@
   }
 }
 .container__registration:last-child {
-  padding: 0 12px;
+  // padding: 0 12px;
   @media screen and (min-width: $tablet) {
     margin-left: 30px;
-    padding: 0;
+    // padding: 0;
   }
 }
 .container__registration:last-child::before {
   content: '';
   display: block;
-  width: 265px;
+  width: calc(100% - 30px);
   height: 1px;
-  background-color: $button-color;
+  background-color: $placeholder-color;
+
   /* background-color: red; */
   position: absolute;
 
