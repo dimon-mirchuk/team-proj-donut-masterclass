@@ -10,12 +10,22 @@
   }
 }
 
+.section__title {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
 .section-text {
   margin-bottom: 10px;
   font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .section-list__text {
   margin: 0;
@@ -27,6 +37,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .list-item::before {
   content: '>';
@@ -37,6 +52,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.hidden-text {
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .slide-btn {
@@ -45,10 +71,18 @@
   font-size: 18px;
   line-height: 20px;
   color: $button-color;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .hidden-content {
   display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .actions {
@@ -72,6 +106,9 @@
   @media screen and (min-width: 768px) {
     margin-left: 15px;
   }
+  @media screen and (min-width: 1280px) {
+    margin-left: 32px;
+  }
 }
 .features-list__item {
   width: 142px;
@@ -85,9 +122,19 @@
 
   padding: 49px 0 9px;
   position: relative;
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+    padding: 63px 0 11px;
+  }
 }
 .features-list__item:not(:last-child) {
   margin-bottom: 57px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 61px;
+  }
 }
 .donut-one::before {
   position: absolute;
@@ -99,7 +146,15 @@
   background-image: url(../images/Program-donuts/mobile-donut-1.png);
   background-position: center;
   top: -34px;
-  left: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/Program-donuts/desktop-donut-1.png);
+    height: 107px;
+    width: 97px;
+    top: -42px;
+  }
 }
 .donut-two {
   margin-top: 25px;
@@ -114,7 +169,15 @@
   background-image: url(../images/Program-donuts/mobile-donut-2.png);
   background-position: center;
   top: -34px;
-  left: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/Program-donuts/desktop-donut-2.png);
+    height: 107px;
+    width: 97px;
+    top: -42px;
+  }
 }
 .donut-three::before {
   position: absolute;
@@ -126,7 +189,15 @@
   background-image: url(../images/Program-donuts/mobile-donut-3.png);
   background-position: center;
   top: -34px;
-  left: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/Program-donuts/desktop-donut-3.png);
+    height: 107px;
+    width: 97px;
+    top: -42px;
+  }
 }
 .donut-four::before {
   position: absolute;
@@ -138,7 +209,15 @@
   background-image: url(../images/Program-donuts/mobile-donut-4.png);
   background-position: center;
   top: -34px;
-  left: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/Program-donuts/desktop-donut-4.png);
+    height: 107px;
+    width: 97px;
+    top: -42px;
+  }
 }
 .item-icon {
   display: block;
@@ -147,12 +226,23 @@
   justify-content: center;
   margin: 0 auto;
   margin-top: 13px;
+
+  @media screen and (min-width: 1280px) {
+    height: 29px;
+    width: 30px;
+    margin-top: 17px;
+  }
 }
 .item-title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 .item-text {
   margin-top: 13px;
