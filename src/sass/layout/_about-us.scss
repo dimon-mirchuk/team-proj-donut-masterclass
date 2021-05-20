@@ -12,3 +12,9 @@
   line-height: 3.61;
   color: $placeholder-color;
 }
+.about-us__wrapper::before {
+  content: '';
+  display: block;
+  background-size: cover;
+  background-position: top;
+}
