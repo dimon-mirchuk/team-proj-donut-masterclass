@@ -1,9 +1,33 @@
 .contact__text {
   text-align: center;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 3.6;
 }
 
 .contakt__form {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 27px;
+  width: 145px;
+}
+
+.contact__input {
+  background-color: inherit;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid $button-color;
+}
+
+.contact__input:first-child {
+  margin-bottom: 15px;
+}
+
+.contact__input::placeholder {
+  color: rgba(171, 129, 108, 0.5);
 }
