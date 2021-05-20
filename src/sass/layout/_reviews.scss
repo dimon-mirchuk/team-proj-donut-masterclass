@@ -1,0 +1,174 @@
+.list {
+  //   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  min-width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 3px solid darkcyan;
+  background-color: #fef3e4;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 626px;
+  }
+}
+
+.reviews__title {
+  text-align: center;
+
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__title {
+    margin-bottom: 24px;
+  }
+}
+
+// .reviews__list {
+//   display: flex;
+// }
+
+.thumb {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    width: 136px;
+    height: 136px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item--carrent {
+  max-width: 626px;
+}
+/*  вычли падинги по 7 пикс 626-14 */
+
+@media screen and (min-width: 768px) {
+  .item--carrent {
+    width: 626px;
+  }
+}
+
+.li-item {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.item--left {
+  position: absolute;
+  left: 48px;
+  top: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item--left {
+    left: 0;
+  }
+}
+
+.item--right {
+  position: absolute;
+  right: 48px;
+  top: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .item--right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item--tablet {
+    display: none;
+  }
+}
+
+.thumb--carrent {
+  width: 110px;
+  height: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb--carrent {
+    width: 186px;
+    height: 186px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb--carrent {
+    width: 234px;
+    height: 234px;
+  }
+}
+
+.name {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 4.06;
+  /* identical to box height, or 406% */
+
+  color: #2e2520;
+}
+
+.text {
+  padding-right: 3px;
+  padding-left: 3px;
+
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: #2e2520;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    padding-bottom: 35px;
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+.icon-pagination {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
