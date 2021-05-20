@@ -1,6 +1,14 @@
 .body__background {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center top, center bottom;
+  background-position: center top, center bottom 216px;
   background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+
+  @media screen and (min-width: $tablet) {
+    background-position: center top, center bottom 63px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-position: center top, center bottom -101px;
+  }
 }
