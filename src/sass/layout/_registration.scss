@@ -1,0 +1,98 @@
+.registration__title {
+  margin-bottom: 10px;
+}
+.registration {
+  line-height: 1.2;
+}
+.registration__information,
+.registration__price {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: right;
+}
+.registration__information--city {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+.registration__form {
+  display: flex;
+}
+.registration__form-text {
+  margin-bottom: 13px;
+  max-width: 292px;
+  font-size: 18px;
+}
+.registration__field::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(171, 129, 108, 0.5);
+}
+.registration__field {
+  height: 22px;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ab816c;
+  background-color: $main-bg-color;
+}
+.registration__field:not(:last-child) {
+  margin-bottom: 15px;
+}
+.registration__field:invalid {
+  border-color: red;
+}
+// .registration__field:focus {
+//   outline: 0;
+//   /* border: 1px solid #ab816c;
+//   border-radius: 4px; */
+// }
+.registration__button {
+  margin-left: 38px;
+}
+.registration__container {
+  position: relative;
+  display: flex;
+  padding-top: 54px;
+  padding-bottom: 53px;
+
+  background: $main-bg-color;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px;
+}
+.container__registration:first-child {
+  margin-right: 30px;
+  @media screen and (min-width: $tablet) {
+    width: 179px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 234px;
+  }
+}
+.container__registration:last-child {
+  margin-left: 30px;
+}
+.container__registration:last-child::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 190px;
+  background-color: #ab816c;
+  /* background-color: red; */
+  position: absolute;
+
+  bottom: 35px;
+  @media screen and (min-width: $tablet) {
+    left: 209px;
+  }
+  @media screen and (min-width: $desktop) {
+    left: 264px;
+  }
+}
+.registration__form-container:first-child {
+  display: flex;
+  flex-direction: column;
+}

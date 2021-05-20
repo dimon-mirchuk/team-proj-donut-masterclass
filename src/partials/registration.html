@@ -1,0 +1,50 @@
+<section class="registration">
+  <div class="body__container">
+    <h2 class="section__title registration__title">Registration</h2>
+
+    <div class="registration__container">
+      <div class="container__registration">
+        <p class="registration__information registration__information--city">
+          May 23, 11:00 <br />
+          New York
+        </p>
+
+        <p class="registration__price">$ 699</p>
+      </div>
+      <div class="container__registration">
+        <p class="registration__form-text">Apply your personal info for registration</p>
+        <form class="registration__form">
+          <div class="registration__form-container">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              class="registration__field"
+              pattern="[A-Za-z]{1,15}"
+            />
+            <input
+              type="tel"
+              name="number"
+              placeholder="Phone number"
+              class="registration__field"
+              pattern="^\+7\d{3}\d{7}$"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="registration__field"
+              pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+            />
+          </div>
+          <div class="registration__form-container">
+            <button type="submit" class="button registration__button">
+              <!-- <span class="button__text">Register</span> -->
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
