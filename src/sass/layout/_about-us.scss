@@ -1,5 +1,10 @@
 .about-us__section {
   outline: 1px solid red;
+  & .section__title {
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
 }
 
 .about-us__wrapper {
@@ -36,7 +41,7 @@
   content: '';
   display: block;
   background-size: contain;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('../images/about-us/mobile-box-cofee-donuts.png');
 
@@ -46,11 +51,11 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: calc(100% + 24px);
 
-    width: 352px;
-    height: 330px;
+    width: 330px;
+    height: 352px;
 
     background-image: url('../images/about-us/tablet-box-cofee-donuts.png');
 
