@@ -1,0 +1,140 @@
+.page-header {
+  @media screen and (min-width: $desktop) {
+    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 719px;
+
+    @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .page-header {
+        background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
+      }
+    }
+  }
+}
+
+.body__container--bgi {
+  background-repeat: no-repeat;
+  @media screen and (max-width: $mobile-max) {
+    background-image: url(../../src/images/header-donuts/mobile-pic-donuts.png);
+    background-position: left top;
+
+    @media screen and (max-width: $mobile-max) and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .body__container--bgi {
+        background-image: url(../../src/images/header-donuts/mobile-pic-donuts@2x.png);
+        background-size: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+  .body__container--bgi {
+    background-image: url(../../src/images/header-donuts/tablet-pic-donuts.png);
+    background-position: 186px 0;
+    background-size: 380px;
+
+    @media screen and (min-width: $tablet) and (max-width: $tablet-max) and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .body__container--bgi {
+        background-image: url(../../src/images/header-donuts/tablet-pic-donuts@2x.png);
+      }
+    }
+  }
+}
+
+.body__container--padd-top {
+  padding-top: 15px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 27px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 31px;
+  }
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+
+  @media screen and (max-width: $mobile-max) {
+    align-items: center;
+  }
+}
+
+// LOGO
+
+.logo {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.logo-icon {
+  fill: black;
+  display: block;
+  width: 96px;
+  height: 43px;
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+// SITE-NAV
+
+.site-nav {
+  display: none;
+}
+
+// BURGER
+
+.menu-button {
+  width: 30px;
+  height: 18px;
+  padding: 0;
+  margin-left: auto;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-button.is-open {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-button__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-button__cross-icon {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__cross-icon {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__menu-icon {
+  display: none;
+}

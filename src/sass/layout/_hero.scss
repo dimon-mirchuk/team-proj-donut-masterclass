@@ -1,0 +1,82 @@
+.hero {
+  @media screen and (max-width: $mobile-max) {
+    padding-top: 52px;
+    padding-left: 33px;
+    padding-right: 33px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    width: 224px;
+    padding-top: 10px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 3px;
+  font-family: Caveat Brush, sans-serif;
+  font-size: 30px;
+  line-height: 1.27;
+}
+
+.hero__text {
+  margin-bottom: 37px;
+  font-weight: 500;
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    margin-bottom: 26px;
+  }
+}
+
+// BUTTON
+
+.button--register {
+  margin-bottom: 45px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 31px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 65px;
+  }
+}
+
+// SOCIAL
+
+// .social-links {
+//   justify-content: center;
+
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .social-links__item {
+//   width: 30px;
+//   height: 30px;
+// }
+
+// .social-links__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+
+//   &:hover {
+//     background-color: $accent-color;
+//   }
+// }
+
+// .social-links__icon {
+//   @media screen and (max-width: $tablet-max) {
+//     width: 19px;
+//     height: 15px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     fill: $white-color;
+//   }
+// }
