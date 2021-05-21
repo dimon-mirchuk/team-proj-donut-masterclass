@@ -1,5 +1,4 @@
 .about-us__section {
-  
   & .section__title {
     @media screen and (min-width: $tablet) {
       text-align: left;
@@ -20,9 +19,13 @@
 }
 
 .about-us__text {
-  margin-top: 21px;
+  margin-top: 18px;
   &:first-of-type {
     margin-top: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 21px;
   }
 }
 
