@@ -165,33 +165,103 @@
     display: block;
   }
 }
-.registration-donut {
+// .registration-donut {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//     position: absolute;
+//     top: -54px;
+//     left: -85px;
+//     z-index: -1;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     top: -51px;
+//     left: -166px;
+//     z-index: -1;
+//   }
+// }
+// .registration-confetti {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//     position: absolute;
+//     right: -75px;
+//     top: 20px;
+//     z-index: -1;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     top: -45px;
+//     right: -230px;
+//     z-index: -1;
+//   }
+// }
+.registration__container::before {
   display: none;
   @media screen and (min-width: $tablet) {
+    content: '';
     display: block;
+    // height: 196px;
+    // width: 200px;
+    height: 235px;
+    width: 255px;
     position: absolute;
-    top: -54px;
-    left: -85px;
+    // top: -25px;
+    // left: -50px;
+    top: -51px;
+    left: -70px;
     z-index: -1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/registration-donut/tablet-donut.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/registration-donut/tablet-donut@2x.png);
+    }
   }
   @media screen and (min-width: $desktop) {
-    top: -51px;
-    left: -166px;
-    z-index: -1;
+    height: 257px;
+    width: 255px;
+    // top: -54px;
+    // left: -110px;
+    top: -54px;
+    left: -165px;
+    background-image: url(../images/registration-donut/desktop-donut.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/registration-donut/desktop-donut@2x.png);
+    }
   }
 }
-.registration-confetti {
+.registration__container::after {
   display: none;
   @media screen and (min-width: $tablet) {
+    content: '';
     display: block;
+    // height: 190px;
+    // width: 345px;
+    height: 280px;
+    width: 374px;
     position: absolute;
-    right: -75px;
-    top: 20px;
+    // top: 138px;
+    // right: -120px;
+    top: 80px;
+    right: -135px;
     z-index: -1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/confetti/tablet-confetti.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/confetti/tablet-confetti@2x.png);
+    }
   }
   @media screen and (min-width: $desktop) {
-    top: -45px;
-    right: -230px;
-    z-index: -1;
+    height: 606px;
+    width: 589px;
+    top: -55px;
+    right: -220px;
+    background-image: url(../images/confetti/desktop-confetti.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/confetti/desktop-confetti@2x.png);
+    }
   }
 }
