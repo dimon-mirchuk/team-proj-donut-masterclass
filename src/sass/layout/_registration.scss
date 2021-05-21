@@ -1,0 +1,301 @@
+.registration__title {
+  @media screen and (max-width: $mobile-max) {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    top: 15px;
+  }
+  // display: none;
+
+  // @media screen and (min-width: $tablet) {
+  //   // display: block;
+  //   position: static;
+  // }
+}
+// .registration__title-mob {
+//   // margin-bottom: 11px;
+//   // @media screen and (min-width: $tablet) {
+//   //   display: none;
+//   // }
+// }
+.registration {
+  position: relative;
+}
+.registration__information {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: right;
+  }
+}
+.registration__price {
+  line-height: 1.22;
+  @extend .registration__information;
+  margin-bottom: 31px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.09;
+  }
+}
+.registration__information--city {
+  margin-bottom: 25px;
+  line-height: 1.22;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+}
+.registration__form {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.registration__form-text {
+  margin-bottom: 17px;
+
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.25;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 13px;
+    max-width: 292px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+.registration__field::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $placeholder-color;
+}
+.registration__field {
+  height: 22px;
+  padding: 2px;
+  border: 1px solid transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid $button-color;
+  background-color: $main-bg-color;
+}
+.registration__field:not(:last-child) {
+  margin-bottom: 25px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.registration__field:invalid {
+  border-color: $warning-color;
+}
+.registration__button {
+  margin-bottom: 34px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 25px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 38px;
+  }
+}
+.registration__container {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  // padding-top: 15px;
+  padding-top: 91px;
+
+  background: $main-bg-color;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 54px;
+    padding-bottom: 53px;
+
+    border-radius: 150px;
+  }
+}
+.container__registration--geometry {
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+    width: 179px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 234px;
+  }
+}
+.container__registration:last-child {
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+  }
+}
+.container__registration:last-child::before {
+  content: '';
+  display: block;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: $placeholder-color;
+
+  position: absolute;
+
+  @media screen and (max-width: $mobile-max) {
+    top: 202px;
+  }
+  @media screen and (min-width: $tablet) {
+    left: 209px;
+    bottom: 35px;
+    width: 1px;
+    height: 190px;
+  }
+  @media screen and (min-width: $desktop) {
+    left: 264px;
+  }
+}
+.registration__form-container:first-child {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+.registration__form-container:last-child {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+// .registration-donut {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//     position: absolute;
+//     top: -54px;
+//     left: -85px;
+//     z-index: -1;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     top: -51px;
+//     left: -166px;
+//     z-index: -1;
+//   }
+// }
+// .registration-confetti {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//     position: absolute;
+//     right: -75px;
+//     top: 20px;
+//     z-index: -1;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     top: -45px;
+//     right: -230px;
+//     z-index: -1;
+//   }
+// }
+.registration__container::before {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    content: '';
+    display: block;
+    // height: 196px;
+    // width: 200px;
+    height: 235px;
+    width: 255px;
+    position: absolute;
+    // top: -25px;
+    // left: -50px;
+    top: -51px;
+    left: -70px;
+    z-index: -1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/registration-donut/tablet-donut.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/registration-donut/tablet-donut@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 257px;
+    width: 255px;
+    // top: -54px;
+    // left: -110px;
+    top: -54px;
+    left: -165px;
+    background-image: url(../images/registration-donut/desktop-donut.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/registration-donut/desktop-donut@2x.png);
+    }
+  }
+}
+.registration__container::after {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    content: '';
+    display: block;
+
+    //размеры тестовые
+    // height: 190px;
+    // width: 345px;
+    //конец размеры тестовые
+
+    //размеры подогнанные
+    height: 303px;
+    width: 260px;
+    top: 75px;
+    right: -70px;
+    //конец размеры подогнанные
+
+    //размеры картинки
+    // height: 280px;
+    // width: 374px;
+    //конец размеры картинки
+
+    position: absolute;
+    //размеры тестовые
+    // top: 138px;
+    // right: -120px;
+    //конец размеры тестовые
+
+    //размеры картинки
+    // top: 80px;
+    // right: -135px;
+    //конец размеры картинки
+
+    z-index: -1;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/confetti/tablet-confetti.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/confetti/tablet-confetti@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 606px;
+    width: 589px;
+    top: -55px;
+    right: -220px;
+    background-image: url(../images/confetti/desktop-confetti.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/confetti/desktop-confetti@2x.png);
+    }
+  }
+}
