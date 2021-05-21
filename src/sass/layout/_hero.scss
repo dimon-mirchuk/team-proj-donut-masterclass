@@ -19,6 +19,32 @@
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .hero::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 719px;
+    height: 660px;
+    content: '';
+
+    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 719px;
+  }
+
+  @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero::after {
+      background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
+    }
+  }
+}
+
 .hero__title {
   margin-bottom: 3px;
   font-family: Caveat Brush, sans-serif;
@@ -30,12 +56,6 @@
     line-height: 1.02;
     margin-bottom: 15px;
   }
-}
-
-.hero__title::after {
-  display: block;
-  content: '';
-  background-color: turquoise;
 }
 
 .hero__text {

@@ -133,6 +133,21 @@ button {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .page-header {
+    background-image: url(../../src/images/header-spoon/desktop-spoon.png);
+    background-position: 0 166px;
+    background-repeat: no-repeat;
+    background-size: 142px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .page-header .page-header {
+    background-image: url(../../src/images/header-spoon/desktop-spoon2x.png);
+  }
+}
+
 .body__container--bgi {
   background-repeat: no-repeat;
 }
@@ -321,6 +336,28 @@ button {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .hero::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 719px;
+    height: 660px;
+    content: '';
+    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 719px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero::after {
+    background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
+  }
+}
+
 .hero__title {
   margin-bottom: 3px;
   font-family: Caveat Brush, sans-serif;
@@ -334,12 +371,6 @@ button {
     line-height: 1.02;
     margin-bottom: 15px;
   }
-}
-
-.hero__title::after {
-  display: block;
-  content: '';
-  background-color: turquoise;
 }
 
 .hero__text {
