@@ -149,12 +149,18 @@
   top: -34px;
   left: 50%;
   transform: translateX(-50%);
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/Program-donuts/mobile-donut-1@2x.png);
+  // }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Program-donuts/desktop-donut-1.png);
     height: 107px;
     width: 97px;
     top: -42px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(../images/Program-donuts/desktop-donut-1@2x.png);
+    // }
   }
 }
 .donut-two {
@@ -172,12 +178,18 @@
   top: -34px;
   left: 50%;
   transform: translateX(-50%);
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/Program-donuts/mobile-donut-2@2x.png);
+  // }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Program-donuts/desktop-donut-2.png);
     height: 107px;
     width: 97px;
     top: -42px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(../images/Program-donuts/desktop-donut-2@2x.png);
+    // }
   }
 }
 .donut-three::before {
@@ -192,12 +204,18 @@
   top: -34px;
   left: 50%;
   transform: translateX(-50%);
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/Program-donuts/mobile-donut-3@2x.png);
+  // }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Program-donuts/desktop-donut-3.png);
     height: 107px;
     width: 97px;
     top: -42px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(../images/Program-donuts/desktop-donut-3@2x.png);
+    // }
   }
 }
 .donut-four::before {
@@ -212,12 +230,18 @@
   top: -34px;
   left: 50%;
   transform: translateX(-50%);
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/Program-donuts/mobile-donut-4@2x.png);
+  // }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/Program-donuts/desktop-donut-4.png);
     height: 107px;
     width: 97px;
     top: -42px;
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(../images/Program-donuts/desktop-donut-4@2x.png);
+    // }
   }
 }
 .item-icon {
