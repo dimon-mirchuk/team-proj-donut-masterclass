@@ -25,6 +25,28 @@
         />
       </picture>
 
+      <picture>
+        <source
+          srcset="
+            ./images/confetti/tablet-confetti.png    1x,
+            ./images/confetti/tablet-confetti@2x.png 2x
+          "
+          media="(max-width:1279px)"
+        />
+        <source
+          srcset="
+            ./images/confetti/desktop-confetti.png    1x,
+            ./images/confetti/desktop-confetti@2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <img
+          src="./images/confetti/desktop-confetti.png"
+          alt="Пончик"
+          class="registration-confetti"
+        />
+      </picture>
+
       <h2 class="section__title registration__title-mob">Registration</h2>
       <div class="container__registration container__registration--geometry">
         <p class="registration__information registration__information--city">

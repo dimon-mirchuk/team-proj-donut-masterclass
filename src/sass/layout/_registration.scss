@@ -180,3 +180,18 @@
     z-index: -1;
   }
 }
+.registration-confetti {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    right: -75px;
+    top: 20px;
+    z-index: -1;
+  }
+  @media screen and (min-width: $desktop) {
+    top: -45px;
+    right: -230px;
+    z-index: -1;
+  }
+}
