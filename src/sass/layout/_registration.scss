@@ -1,15 +1,24 @@
 .registration__title {
-  display: none;
-  @media screen and (min-width: $tablet) {
-    display: block;
+  @media screen and (max-width: $mobile-max) {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    top: 15px;
   }
+  // display: none;
+
+  // @media screen and (min-width: $tablet) {
+  //   // display: block;
+  //   position: static;
+  // }
 }
-.registration__title-mob {
-  margin-bottom: 11px;
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
+// .registration__title-mob {
+//   // margin-bottom: 11px;
+//   // @media screen and (min-width: $tablet) {
+//   //   display: none;
+//   // }
+// }
 .registration {
   position: relative;
 }
@@ -72,6 +81,9 @@
   height: 22px;
   padding: 2px;
   border: 1px solid transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
   border-bottom: 1px solid $button-color;
   background-color: $main-bg-color;
 }
@@ -85,7 +97,7 @@
   border-color: $warning-color;
 }
 .registration__button {
-  margin-bottom: 25px;
+  margin-bottom: 34px;
   @media screen and (min-width: $tablet) {
     margin-left: 25px;
     margin-bottom: 0;
@@ -98,7 +110,8 @@
   position: relative;
   padding-left: 12px;
   padding-right: 12px;
-  padding-top: 15px;
+  // padding-top: 15px;
+  padding-top: 91px;
 
   background: $main-bg-color;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
@@ -246,6 +259,7 @@
     top: 80px;
     right: -135px;
     z-index: -1;
+    overflow: hidden;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
