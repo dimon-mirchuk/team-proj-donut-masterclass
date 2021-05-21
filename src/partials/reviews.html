@@ -1,76 +1,78 @@
 <!-- Reviews -->
 <section id="reviews" class="reviews">
-    <h2 class="section__title reviews__title">Reviews</h2>
-    <ul class="reviews__list">
-        <li>
-            <article class="item item--tablet item--left">
-                <h3 class="visually-hidden">Feedback from John</h3>
-                <div class="thumb">
-                    <picture>
-                        <source srcset="./images/reviews/tablet-john.jpg 1x, ./images/reviews/tablet-john@2x.jpg 2x"
-                            media="(max-width: 1199px)" />
-                        <source srcset="./images/reviews/desktop-john.jpg 1x, ./images/reviews/desktop-john@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                        <img src="./images/reviews/desktop-john.jpg" alt="Photo John" />
-                    </picture>
-                </div>
-                <svg class="icon" width="136px" height="24px">
-                    <use href="./images/icons.svg#rate-4"></use>
-                </svg>
-                <p class="name">John</p>
-            </article>
-        </li>
-        <li class="li-item">
-            <article class="item item--carrent">
-                <h3 class="visually-hidden">Feedback from Will</h3>
-                <div class="thumb thumb--carrent">
-                    <picture>
-                        <source srcset="./images/reviews/mobile-will.jpg 1x, ./images/reviews/mobile-will@2x.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/reviews/tablet-will.jpg 1x, ./images/reviews/tablet-will@2x.jpg 2x"
-                            media="(max-width: 1199px)" />
-                        <source srcset="./images/reviews/desktop-will.jpg 1x, ./images/reviews/desktop-will@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                        <img src="./images/reviews/desktop-will.jpg" alt="Photo Will" />
-                    </picture>
-                </div>
-                <svg class="icon" width="136px" height="24px">
-                    <use href="./images/icons.svg#rate-5"></use>
-                </svg>
-                <p class="name">Will</p>
-                <p class="text"> Last time I have visited a cooking course by Eva
-                    I was impressed with the way she explained everything
-                    to people. You can be sure you will manage to cook a delicious dish even if it is your first time in
-                    the kitchen!
-                    Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to
-                    everyone!
-                </p>
-            </article>
-        </li>
-        <li>
-            <article class="item item--tablet item--right">
-                <h3 class="visually-hidden">Feedback from Elisabeth</h3>
-                <div class="thumb">
-                    <picture>
-                        <source
-                            srcset="./images/reviews/tablet-elisabeth.jpg 1x, ./images/reviews/tablet-elisabeth@2x.jpg 2x"
-                            media="(max-width: 1199px)" />
-                        <source
-                            srcset="./images/reviews/desktop-elisabeth.jpg 1x, ./images/reviews/desktop-elisabeth@2x.jpg 2x"
-                            media="(min-width: 1200px)" />
-                        <img src="./images/reviews/desktop-elisabeth.jpg" alt="Photo Elisabeth" />
-                    </picture>
-                </div>
-                <svg class="icon" width="136px" height="24px">
-                    <use href="./images/icons.svg#rate-5"></use>
-                </svg>
-                <p class="name">Elisabeth</p>
-            </article>
-        </li>
-    </ul>
-    <span>
-        <svg class="icon-pagination" width="120px" height="20px">
-            <use href="./images/icons.svg#pagination"></use>
-        </svg>
-    </span>
+    <div class="reviews__container body__container">
+        <h2 class="section__title reviews__title">Reviews</h2>
+        <ul class="reviews__list">
+            <li class="reviews__item reviews__item--left">
+                <article class="feedback">
+                    <h3 class="visually-hidden">Feedback from John</h3>
+                    <div class="feedback__thumb">
+                        <picture>
+                            <source srcset="./images/reviews/tablet-john.jpg 1x, ./images/reviews/tablet-john@2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/reviews/desktop-john.jpg 1x, ./images/reviews/desktop-john@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/reviews/desktop-john.jpg" alt="Photo John" />
+                        </picture>
+                    </div>
+                    <svg width="136px" height="24px">
+                        <use href="./images/icons.svg#rate-4"></use>
+                    </svg>
+                    <h4 class="feedback__name">John</h4>
+                </article>
+            </li>
+            <li class="reviews__item reviews__item--carrent">
+                <article class="feedback">
+                    <h3 class="visually-hidden">Feedback from Will</h3>
+                    <div class="feedback__thumb feedback__thumb--carrent">
+                        <picture>
+                            <source srcset="./images/reviews/mobile-will.jpg 1x, ./images/reviews/mobile-will@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <source srcset="./images/reviews/tablet-will.jpg 1x, ./images/reviews/tablet-will@2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/reviews/desktop-will.jpg 1x, ./images/reviews/desktop-will@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/reviews/desktop-will.jpg" alt="Photo Will" />
+                        </picture>
+                    </div>
+                    <svg width="136px" height="24px">
+                        <use href="./images/icons.svg#rate-5"></use>
+                    </svg>
+                    <h4 class="feedback__name">Will</h4>
+                    <p class="feedback__text"> Last time I have visited a cooking course by Eva
+                        I was impressed with the way she explained everything
+                        to people. You can be sure you will manage to cook a delicious dish even if it is your first time in
+                        the kitchen! <br/>
+                        Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to
+                        everyone!
+                    </p>
+                </article>
+            </li>
+            <li class="reviews__item reviews__item--right">
+                <article class="feedback">
+                    <h3 class="visually-hidden">Feedback from Elisabeth</h3>
+                    <div class="feedback__thumb">
+                        <picture>
+                            <source
+                                srcset="./images/reviews/tablet-elisabeth.jpg 1x, ./images/reviews/tablet-elisabeth@2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+                            <source
+                                srcset="./images/reviews/desktop-elisabeth.jpg 1x, ./images/reviews/desktop-elisabeth@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <img src="./images/reviews/desktop-elisabeth.jpg" alt="Photo Elisabeth" />
+                        </picture>
+                    </div>
+                    <svg width="136px" height="24px">
+                        <use href="./images/icons.svg#rate-5"></use>
+                    </svg>
+                    <h4 class="feedback__name">Elisabeth</h4>
+                </article>
+            </li>
+        </ul>
+        <span>
+            <svg class="reviews__pagination" width="120px" height="20px">
+                <use href="./images/icons.svg#pagination"></use>
+            </svg>
+        </span>
+    </div>
 </section>

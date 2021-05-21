@@ -1,138 +1,124 @@
 .reviews {
-  position: relative;
-  min-width: 290px;
-  margin-right: auto;
-  margin-left: auto;
-  outline: 3px solid darkcyan;
-}
+  padding-bottom: 30px;
 
-@media screen and (min-width: $tablet) {
-  .reviews {
-    width: 626px;
-  }
-}
-
-.reviews__title {
-  @media screen and (max-width: $mobile-max) {
-    margin-bottom: 0;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 40px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 24px;
+    padding-bottom: 62px;
+  }
+
+  &__container {
+    position: relative;
+    min-width: 290px;
+    max-width: 626px;
+  }
+
+  &__title {
+    @media screen and (max-width: $mobile-max) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item--carrent {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 626px;
+  }
+
+  &__item--left {
+    position: absolute;
+    left: 48px;
+    top: 70px;
+
+    @media screen and (max-width: $mobile-max) {
+      display: none;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 0;
+    }
+  }
+
+  &__item--right {
+    position: absolute;
+    right: 48px;
+    top: 70px;
+
+    @media screen and (max-width: $mobile-max) {
+      display: none;
+    }
+    @media screen and (min-width: $desktop) {
+      right: 0;
+    }
+  }
+
+  &__pagination {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.reviews__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.thumb {
-  width: 110px;
-  height: 110px;
-  margin-bottom: 6px;
-  border-radius: 50%;
-  overflow: hidden;
-
-  @media screen and (min-width: $desktop) {
-    width: 136px;
-    height: 136px;
-  }
-}
-
-.item {
+.feedback {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.item--carrent {
-  max-width: 626px;
-  /*  вычли падинги по 7 пикс 626-14 */
 
-  @media screen and (min-width: $tablet) {
-    width: 626px;
-  }
-}
+  &__thumb {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 6px;
+    border-radius: 50%;
+    overflow: hidden;
 
-.li-item {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.item--left {
-  position: absolute;
-  left: 48px;
-  top: 70px;
-
-  @media screen and (min-width: $desktop) {
-    left: 0;
-  }
-}
-
-.item--right {
-  position: absolute;
-  right: 48px;
-  top: 70px;
-
-  @media screen and (min-width: $desktop) {
-    right: 0;
-  }
-}
-
-.item--tablet {
-  @media screen and (max-width: $mobile-max) {
-    display: none;
-  }
-}
-
-.thumb--carrent {
-  width: 110px;
-  height: 110px;
-
-  @media screen and (min-width: $tablet) {
-    width: 186px;
-    height: 186px;
+    @media screen and (min-width: $desktop) {
+      width: 136px;
+      height: 136px;
+    }
   }
 
-  @media screen and (min-width: $desktop) {
-    width: 234px;
-    height: 234px;
-  }
-}
+  &__thumb--carrent {
+    width: 110px;
+    height: 110px;
 
-.name {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 4.64;
+    @media screen and (min-width: $tablet) {
+      width: 186px;
+      height: 186px;
+    }
 
-  @media screen and (min-width: $desktop) {
-    font-size: 16px;
-    line-height: 4.06;
-  }
-}
-
-.text {
-  padding-right: 3px;
-  padding-left: 3px;
-  padding-bottom: 30px;
-
-  text-align: center;
-
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 35px;
-    padding-right: 1px;
-    padding-left: 1px;
+    @media screen and (min-width: $desktop) {
+      width: 234px;
+      height: 234px;
+    }
   }
 
-  @media screen and (min-width: $desktop) {
-    padding-right: 7px;
-    padding-left: 7px;
-  }
-}
+  &__name {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.64;
 
-.icon-pagination {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 4.06;
+    }
+  }
+
+  &__text {
+    padding-bottom: 30px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 35px;
+    }
+  }
 }
