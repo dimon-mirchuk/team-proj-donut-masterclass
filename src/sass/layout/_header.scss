@@ -17,6 +17,7 @@
 }
 
 .body__container--bgi {
+  z-index: -1;
   background-repeat: no-repeat;
   @media screen and (max-width: $mobile-max) {
     background-image: url(../../src/images/header-donuts/mobile-pic-donuts.png);
@@ -76,9 +77,10 @@
 // LOGO
 
 .logo {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $mobile-max) {
     position: absolute;
     left: 50%;
+    top: 7px;
     transform: translateX(-50%);
   }
 

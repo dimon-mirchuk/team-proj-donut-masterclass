@@ -149,6 +149,7 @@ button {
 }
 
 .body__container--bgi {
+  z-index: -1;
   background-repeat: no-repeat;
 }
 
@@ -214,10 +215,11 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768.9px) {
   .logo {
     position: absolute;
     left: 50%;
+    top: 7px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -340,7 +342,7 @@ button {
   .hero::after {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50%;
     display: block;
     width: 719px;
     height: 660px;
