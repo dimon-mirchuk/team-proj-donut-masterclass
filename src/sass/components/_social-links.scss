@@ -27,6 +27,8 @@
   height: 19px;
   width: 24px;
   fill: $main-text-color;
+
+  transition: fill $duration $cubic;
 }
 
 .social-links__link {
@@ -36,6 +38,8 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+
+  transition: background-color $duration $cubic, transform $duration $cubic;
 
   &:hover,
   &:focus {

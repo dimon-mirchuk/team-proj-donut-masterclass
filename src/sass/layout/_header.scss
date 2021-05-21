@@ -1,16 +1,18 @@
 .page-header {
   @media screen and (min-width: $desktop) {
-    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
-    background-position: right top;
+    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png),
+      url(../../src/images/header-spoon/desktop-spoon.png);
+    background-position: right top, 0 166px;
     background-repeat: no-repeat;
-    background-size: 719px;
+    background-size: 719px, 142px;
 
     @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .page-header {
-        background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
+        background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png),
+          url(../../src/images/header-spoon/desktop-spoon2x.png);
       }
     }
   }
@@ -66,6 +68,7 @@
 .main-nav {
   position: relative;
   display: flex;
+  align-items: center;
 
   @media screen and (max-width: $mobile-max) {
     align-items: center;
@@ -79,6 +82,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 38px;
   }
 }
 
@@ -97,7 +104,32 @@
 // SITE-NAV
 
 .site-nav {
-  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .site-nav {
+    display: none;
+  }
+
+  .menu-container.is-open .site-nav {
+    display: block;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.site-nav__link {
+  color: black;
 }
 
 // BURGER
