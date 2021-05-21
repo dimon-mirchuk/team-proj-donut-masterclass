@@ -1,15 +1,10 @@
 .contact__text {
   text-align: center;
-  font-size: 18px;
   margin-bottom: 20px;
   // margin 20px взято из расчёта, что line-height из макета по просьбе не был взят, используется стандартный 1,25. input имеет свой padding 1px. А всего у нас должно получиться расстояние 27px по макету, такое же как между input и button. Они равны, мерила линейкой)
-
-  @media screen and (max-width: $tablet) {
-    font-size: 16px;
-  }
 }
 
-.contakt__form {
+.contaсt__form {
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +14,10 @@
   margin-right: auto;
   margin-top: 27px;
   width: 145px;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-top: 37px;
+  }
 }
 
 .contact__input {
@@ -29,8 +28,16 @@
   border-bottom: 1px solid $button-color;
 }
 
+.contact__input:invalid {
+  border-color: $warning-color;
+}
+
 .contact__input:first-child {
   margin-bottom: 15px;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 25px;
+  }
 }
 
 .contact__input::placeholder {
