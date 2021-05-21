@@ -1,17 +1,17 @@
 .section-program {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
 
 .right {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: auto;
   }
 }
 
 .section__title {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }
@@ -22,7 +22,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -38,7 +38,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -53,14 +53,14 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 22px;
   }
 }
 
 .hidden-text {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: block;
   }
 }
@@ -72,7 +72,7 @@
   line-height: 20px;
   color: $button-color;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -80,7 +80,7 @@
 .hidden-content {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: block;
   }
 }
@@ -104,10 +104,10 @@
 .program-list + .program-list {
   margin-left: 6px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 15px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 32px;
   }
 }
@@ -124,7 +124,7 @@
   padding: 49px 0 9px;
   position: relative;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 180px;
     height: 180px;
     padding: 63px 0 11px;
@@ -133,7 +133,7 @@
 .program-list__item:not(:last-child) {
   margin-bottom: 57px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 61px;
   }
 }
@@ -153,7 +153,7 @@
   //   background-image: url(../images/Program-donuts/mobile-donut-1@2x.png);
   // }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/Program-donuts/desktop-donut-1.png);
     height: 107px;
     width: 97px;
@@ -182,7 +182,7 @@
   //   background-image: url(../images/Program-donuts/mobile-donut-2@2x.png);
   // }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/Program-donuts/desktop-donut-2.png);
     height: 107px;
     width: 97px;
@@ -208,7 +208,7 @@
   //   background-image: url(../images/Program-donuts/mobile-donut-3@2x.png);
   // }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/Program-donuts/desktop-donut-3.png);
     height: 107px;
     width: 97px;
@@ -234,7 +234,7 @@
   //   background-image: url(../images/Program-donuts/mobile-donut-4@2x.png);
   // }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/Program-donuts/desktop-donut-4.png);
     height: 107px;
     width: 97px;
@@ -252,7 +252,7 @@
   margin: 0 auto;
   margin-top: 13px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     height: 29px;
     width: 30px;
     margin-top: 17px;
@@ -264,7 +264,7 @@
   font-size: 18px;
   line-height: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
     line-height: 31px;
   }
@@ -278,7 +278,7 @@
 }
 
 .flex {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
