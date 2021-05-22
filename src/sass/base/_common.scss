@@ -74,6 +74,7 @@ button {
 }
 
 .section__title {
+  margin-bottom: 10px;
   font-family: $secondary-font;
   font-style: normal;
   font-weight: normal;
@@ -100,4 +101,12 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden-content {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
     />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
-  <body>
+  <body class="body body__background">
     <include src="./partials/header.html"></include>
     <include src="./partials/menu.html"></include>
     <main>
@@ -30,9 +30,8 @@
     </main>
     <include src="./partials/footer.html"></include>
 
-    <!-- Скрипт идёт последним в разметке.  нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <!-- Скрипт для слайда текста для about us и program-->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/slidedown.js"></script>
   </body>
 </html>

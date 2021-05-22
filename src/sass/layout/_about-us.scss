@@ -1,0 +1,80 @@
+.about-us__section {
+  outline: 1px solid red;
+  & .section__title {
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+}
+
+.about-us__wrapper {
+  @media screen and (min-width: $tablet) {
+    width: 336px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 392px;
+  }
+}
+
+.about-us__text {
+  margin-top: 21px;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.about-us__link {
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 3.61;
+  color: $button-color;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+.about-us__wrapper::before {
+  height: 290px;
+  content: '';
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/about-us/mobile-box-cofee-donuts.png');
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/about-us/mobile-box-cofee-donuts@2x.png');
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 7px;
+    right: calc(100% + 24px);
+
+    width: 330px;
+    height: 352px;
+
+    background-image: url('../images/about-us/tablet-box-cofee-donuts.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/tablet-box-cofee-donuts@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -64px;
+    right: calc(100% + 76px);
+
+    width: 512px;
+    height: 547px;
+
+    background-image: url('../images/about-us/desktop-box-cofee-donuts.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about-us/desktop-box-cofee-donuts@2x.png');
+    }
+  }
+}
