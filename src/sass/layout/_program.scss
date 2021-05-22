@@ -1,21 +1,25 @@
-.section-program {
+.program {
   @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
 
-.right {
+.program--right {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
   @media screen and (min-width: $tablet) {
     margin-left: auto;
   }
 }
 
-.section__left-position {
+.program__title {
   @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }
-.section-text {
+.program__text {
   margin-bottom: 10px;
   font-family: Montserrat;
   font-weight: 400;
@@ -27,11 +31,11 @@
     line-height: 22px;
   }
 }
-.list__text {
+.list-text {
   margin: 0;
   padding: 0;
 }
-.list__text-item {
+.list-text__item {
   margin-bottom: 10px;
   font-family: Montserrat;
   font-weight: 400;
@@ -44,12 +48,12 @@
     line-height: 22px;
   }
 }
-.list__text-item-icon {
+.list-text__icon {
   display: inline-block;
   height: 18px;
   width: 19px;
 }
-.slide-text {
+.program__slide-text {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
@@ -67,7 +71,7 @@
   }
 }
 
-.slide-btn {
+.program__slide-btn {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 18px;
@@ -87,18 +91,11 @@
 //   }
 // }
 
-.actions {
-  padding: 0;
-}
+// .actions {
+//   padding: 0;
+// }
 
 // Features
-
-.right {
-  padding: 20px 0;
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: center;
-}
 
 .program-list {
   padding: 0;
@@ -262,7 +259,7 @@
     }
   }
 }
-.item-icon {
+.program-list__icon {
   display: block;
   height: 18px;
   width: 19px;
@@ -276,7 +273,7 @@
     margin-top: 17px;
   }
 }
-.item-title {
+.program-list__item-title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 18px;
@@ -287,7 +284,7 @@
     line-height: 31px;
   }
 }
-.item-text {
+.program-list__text {
   margin-top: 13px;
   font-family: Montserrat;
   font-weight: 400;
