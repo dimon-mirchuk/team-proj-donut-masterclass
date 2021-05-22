@@ -1,0 +1,21 @@
+.footer__wrapper {
+  margin-top: 34px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 51px;
+    margin-bottom: 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 35px;
+  }
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $main-text-color;
+}
