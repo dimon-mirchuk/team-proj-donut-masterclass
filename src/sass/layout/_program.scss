@@ -10,7 +10,7 @@
   }
 }
 
-.section__title {
+.section__left-position {
   @media screen and (min-width: $tablet) {
     text-align: left;
   }
@@ -43,9 +43,13 @@
     line-height: 22px;
   }
 }
-.list__text-item::before {
-  content: '>';
-  display: inline-block;
+.list__text-item-icon {
+  display: block;
+  height: 18px;
+  width: 19px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 .slide-text {
   font-family: Montserrat;
