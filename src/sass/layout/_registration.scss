@@ -6,19 +6,7 @@
     margin-bottom: 0;
     top: 15px;
   }
-  // display: none;
-
-  // @media screen and (min-width: $tablet) {
-  //   // display: block;
-  //   position: static;
-  // }
 }
-// .registration__title-mob {
-//   // margin-bottom: 11px;
-//   // @media screen and (min-width: $tablet) {
-//   //   display: none;
-//   // }
-// }
 .registration {
   position: relative;
 
@@ -118,7 +106,6 @@
   position: relative;
   padding-left: 12px;
   padding-right: 12px;
-  // padding-top: 15px;
   padding-top: 91px;
 
   background: $main-bg-color;
@@ -186,48 +173,14 @@
     display: block;
   }
 }
-// .registration-donut {
-//   display: none;
-//   @media screen and (min-width: $tablet) {
-//     display: block;
-//     position: absolute;
-//     top: -54px;
-//     left: -85px;
-//     z-index: -1;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     top: -51px;
-//     left: -166px;
-//     z-index: -1;
-//   }
-// }
-// .registration-confetti {
-//   display: none;
-//   @media screen and (min-width: $tablet) {
-//     display: block;
-//     position: absolute;
-//     right: -75px;
-//     top: 20px;
-//     z-index: -1;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     top: -45px;
-//     right: -230px;
-//     z-index: -1;
-//   }
-// }
 .registration__container::before {
   display: none;
   @media screen and (min-width: $tablet) {
     content: '';
     display: block;
-    // height: 196px;
-    // width: 200px;
     height: 235px;
     width: 255px;
     position: absolute;
-    // top: -25px;
-    // left: -50px;
     top: -51px;
     left: -70px;
     z-index: -1;
@@ -242,8 +195,6 @@
   @media screen and (min-width: $desktop) {
     height: 257px;
     width: 255px;
-    // top: -54px;
-    // left: -110px;
     top: -54px;
     left: -165px;
     background-image: url(../images/registration-donut/desktop-donut.png);
@@ -258,33 +209,12 @@
     content: '';
     display: block;
 
-    //размеры тестовые
-    // height: 190px;
-    // width: 345px;
-    //конец размеры тестовые
-
-    //размеры подогнанные
     height: 303px;
     width: 260px;
     top: 75px;
     right: -70px;
-    //конец размеры подогнанные
-
-    //размеры картинки
-    // height: 280px;
-    // width: 374px;
-    //конец размеры картинки
 
     position: absolute;
-    //размеры тестовые
-    // top: 138px;
-    // right: -120px;
-    //конец размеры тестовые
-
-    //размеры картинки
-    // top: 80px;
-    // right: -135px;
-    //конец размеры картинки
 
     z-index: -1;
     overflow: hidden;
