@@ -1,78 +1,16 @@
-.page-header {
-  @media screen and (min-width: $desktop) {
-    background-image: url(../../src/images/header-spoon/desktop-spoon.png);
-    background-position: -60px 166px;
-    background-repeat: no-repeat;
-    background-size: 142px;
+// .page-header {
+//   @media screen and (min-width: $desktop) {
+//     background-image: url(../images/header-spoon/desktop-spoon.png);
+//     background-position: -60px 166px;
+//     background-repeat: no-repeat;
+//     background-size: 142px;
 
-    @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .page-header {
-        background-image: url(../../src/images/header-spoon/desktop-spoon2x.png);
-      }
-    }
-
-    @media screen and (min-width: 1380px) {
-      background-position: 0 166px;
-    }
-
-    @media screen and (min-width: 1600px) {
-      background-position-x: 0;
-    }
-
-    @media screen and (min-width: 1800px) {
-      background-position-x: 10%;
-    }
-
-    @media screen and (min-width: 2000px) {
-      background-position-x: 20%;
-    }
-    @media screen and (min-width: 2300px) {
-      background-position-x: 25%;
-    }
-    @media screen and (min-width: 2800px) {
-      background-position-x: 30%;
-    }
-
-    @media screen and (min-width: 3200px) {
-      background-position-x: 33%;
-    }
-  }
-}
-
-// .body__container--bgi {
-//   z-index: -1;
-//   background-repeat: no-repeat;
-//   @media screen and (max-width: $mobile-max) {
-//     background-image: url(../../src/images/header-donuts/mobile-pic-donuts.png);
-//     background-position: left top;
-
-//     @media screen and (max-width: $mobile-max) and (min-device-pixel-ratio: 2),
+//     @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
 //       (-webkit-min-device-pixel-ratio: 2),
 //       (min-resolution: 192dpi),
 //       (min-resolution: 2dppx) {
-//       .body__container--bgi {
-//         background-image: url(../../src/images/header-donuts/mobile-pic-donuts@2x.png);
-//         background-size: 120px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
-//   .body__container--bgi {
-//     background-image: url(../../src/images/header-donuts/tablet-pic-donuts.png);
-//     background-position: 186px 0;
-//     background-size: 380px;
-
-//     @media screen and (min-width: $tablet) and (max-width: $tablet-max) and (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       .body__container--bgi {
-//         background-image: url(../../src/images/header-donuts/tablet-pic-donuts@2x.png);
+//       .page-header {
+//         background-image: url(../images/header-spoon/desktop-spoon2x.png);
 //       }
 //     }
 //   }
@@ -92,6 +30,7 @@
 
 .main-nav {
   z-index: 2;
+  position: relative;
 
   display: flex;
   align-items: center;

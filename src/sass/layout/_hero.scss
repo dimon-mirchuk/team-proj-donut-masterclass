@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   z-index: 1;
   @media screen and (max-width: $mobile-max) {
     padding-top: 52px;
@@ -138,57 +139,33 @@
 //   }
 // }
 
-.donuts {
+.donuts-bgi {
   position: absolute;
   z-index: -2;
   @media screen and (max-width: $mobile-max) {
-    top: -50px;
-    left: -12px;
+    top: -32%;
+    left: -5%;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 899px) {
-    right: 20%;
-    top: -35px;
-  }
-
-  @media screen and (min-width: 900px) and (max-width: 1049px) {
-    right: 25%;
-    top: -35px;
-  }
-
-  @media screen and (min-width: 1050px) and (max-width: $tablet-max) {
-    right: 30%;
-    top: -35px;
+  @media screen and (min-width: $tablet) {
+    right: -150%;
+    top: -35%;
   }
 
   @media screen and (min-width: $desktop) {
-    top: -171px;
-    right: -74px;
+    right: -143%;
+    top: -60%;
+  }
+}
+
+.spoon-bgi {
+  @media screen and (max-width: $tablet-max) {
+    display: none;
   }
 
-  @media screen and (min-width: 1380px) {
-    right: 0;
-  }
-
-  @media screen and (min-width: 1600px) {
-    right: 5%;
-  }
-
-  @media screen and (min-width: 1800px) {
-    right: 10%;
-  }
-
-  @media screen and (min-width: 2000px) {
-    right: 15%;
-  }
-  @media screen and (min-width: 2300px) {
-    right: 20%;
-  }
-  @media screen and (min-width: 2800px) {
-    right: 25%;
-  }
-
-  @media screen and (min-width: 3200px) {
-    right: 28%;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 15%;
+    left: -72%;
   }
 }

@@ -4,7 +4,7 @@
             <nav class="main-nav">
                 <a href="./" class="logo">
                     <svg class="logo-icon">
-                        <use href="../src/images/icons.svg#logo"></use>
+                        <use href="./images/icons.svg#logo"></use>
                     </svg>
                 </a>
         
@@ -35,9 +35,9 @@
         
                 <button type="button" class="menu-button" data-menu-button>
                     <svg class="menu-button__icon">
-                        <use href="../src/images/icons.svg#close" width="18px" height="18px" class="menu-button__cross-icon">
+                        <use href="./images/icons.svg#close" width="18px" height="18px" class="menu-button__cross-icon">
                         </use>
-                        <use href="../src/images/icons.svg#menu" width="30px" height="16px" class="menu-button__menu-icon">
+                        <use href="./images/icons.svg#menu" width="30px" height="16px" class="menu-button__menu-icon">
                         </use>
                     </svg>
                 </button>
@@ -77,28 +77,38 @@
                     </li>
                 </ul>
 
-                <picture class="donuts">
+                <picture class="donuts-bgi">
                     <source
                         media="(max-width: 768.9px)"
-                        srcset="../src/images/header-donuts/mobile-pic-donuts.png 1x, ../src/images/header-donuts/mobile-pic-donuts@2x.png 2x"
+                        srcset="./images/header-donuts/mobile-pic-donuts.png 1x, ./images/header-donuts/mobile-pic-donuts@2x.png 2x"
                         type="image/png"
                         sizes="35vw"
                         
                     >
                     <source
                         media="(max-width: 1279.9px)"
-                        srcset="../src/images/header-donuts/tablet-pic-donuts.png 1x, ../src/images/header-donuts/tablet-pic-donuts@2x.png 2x"
+                        srcset="./images/header-donuts/tablet-pic-donuts.png 1x, ./images/header-donuts/tablet-pic-donuts@2x.png 2x"
                         type="image/png"
                         sizes="35vw"
                     >
                     <source 
                         media="(min-width: 1280px)" 
-                        srcset="../src/images/header-donuts/desktop-pic-donuts.png 1x, ../src/images/header-donuts/desktop-pic-donuts@2x.png 2x" 
+                        srcset="./images/header-donuts/desktop-pic-donuts.png 1x, ./images/header-donuts/desktop-pic-donuts@2x.png 2x" 
                         type="image/png" 
                         sizes=""
             
                     >
-                    <img src="../src/images/header-donuts/mobile-pic-donuts.png" alt="пончики">
+                    <img src="./images/header-donuts/mobile-pic-donuts.png" alt="пончики">
+                </picture>
+
+                <picture class="spoon-bgi">
+                    <source
+                        media="(min-width: 1280px)"
+                        srcset="./images/header-spoon/desktop-spoon.png 1x, ./images/header-spoon/desktop-spoon2x.png 2x"
+                        type="image/png"
+                        sizes="15vw"
+                    >
+                    <img src="./images/header-spoon/desktop-spoon.png" alt="Черпак">
                 </picture>
             </section>
         </div>
