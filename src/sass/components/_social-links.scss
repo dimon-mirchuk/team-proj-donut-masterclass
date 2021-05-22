@@ -1,11 +1,14 @@
 .social-links {
   display: flex;
+  justify-content: center;
 
   margin: 0;
   padding: 0;
+}
 
-  @media screen and (max-width: $mobile-max) {
-    justify-content: center;
+.social-links--flex-start {
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
   }
 }
 

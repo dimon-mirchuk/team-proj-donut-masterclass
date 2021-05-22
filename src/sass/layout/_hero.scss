@@ -1,4 +1,5 @@
 .hero {
+  z-index: 1;
   @media screen and (max-width: $mobile-max) {
     padding-top: 52px;
     padding-left: 33px;
@@ -19,33 +20,34 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
-  .hero::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 719px;
-    height: 660px;
-    content: '';
+// @media screen and (min-width: $desktop) {
+//   .hero::after {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     display: block;
+//     width: 719px;
+//     height: 660px;
+//     content: '';
 
-    background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 719px;
-  }
+//     background-image: url(../../src/images/header-donuts/desktop-pic-donuts.png);
+//     background-position: right top;
+//     background-repeat: no-repeat;
+//     background-size: 719px;
+//   }
 
-  @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero::after {
-      background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
-    }
-  }
-}
+//   @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     .hero::after {
+//       background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
+//     }
+//   }
+// }
 
 .hero__title {
+  z-index: -1;
   margin-bottom: 3px;
   font-family: $secondary-font;
   font-size: 30px;
@@ -135,3 +137,58 @@
 //     fill: $white-color;
 //   }
 // }
+
+.donuts {
+  position: absolute;
+  z-index: -2;
+  @media screen and (max-width: $mobile-max) {
+    top: -50px;
+    left: -12px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 899px) {
+    right: 20%;
+    top: -35px;
+  }
+
+  @media screen and (min-width: 900px) and (max-width: 1049px) {
+    right: 25%;
+    top: -35px;
+  }
+
+  @media screen and (min-width: 1050px) and (max-width: $tablet-max) {
+    right: 30%;
+    top: -35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -171px;
+    right: -74px;
+  }
+
+  @media screen and (min-width: 1380px) {
+    right: 0;
+  }
+
+  @media screen and (min-width: 1600px) {
+    right: 5%;
+  }
+
+  @media screen and (min-width: 1800px) {
+    right: 10%;
+  }
+
+  @media screen and (min-width: 2000px) {
+    right: 15%;
+  }
+  @media screen and (min-width: 2300px) {
+    right: 20%;
+  }
+  @media screen and (min-width: 2800px) {
+    right: 25%;
+  }
+
+  @media screen and (min-width: 3200px) {
+    right: 28%;
+  }
+}

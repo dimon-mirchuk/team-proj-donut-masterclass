@@ -53,7 +53,7 @@
                         Register
                     </a>
                 </button>
-                <ul class="social-links">
+                <ul class="social-links social-links--flex-start">
                     <li class="social-links__item">
                         <a href="https://twitter.com/" class="social-links__link" target="_blank" aria-label="twitter">
                             <svg class="social-links__icon">
@@ -76,6 +76,30 @@
                         </a>
                     </li>
                 </ul>
+
+                <picture class="donuts">
+                    <source
+                        media="(max-width: 768.9px)"
+                        srcset="../src/images/header-donuts/mobile-pic-donuts.png 1x, ../src/images/header-donuts/mobile-pic-donuts@2x.png 2x"
+                        type="image/png"
+                        sizes="35vw"
+                        
+                    >
+                    <source
+                        media="(max-width: 1279.9px)"
+                        srcset="../src/images/header-donuts/tablet-pic-donuts.png 1x, ../src/images/header-donuts/tablet-pic-donuts@2x.png 2x"
+                        type="image/png"
+                        sizes="35vw"
+                    >
+                    <source 
+                        media="(min-width: 1280px)" 
+                        srcset="../src/images/header-donuts/desktop-pic-donuts.png 1x, ../src/images/header-donuts/desktop-pic-donuts@2x.png 2x" 
+                        type="image/png" 
+                        sizes=""
+            
+                    >
+                    <img src="../src/images/header-donuts/mobile-pic-donuts.png" alt="пончики">
+                </picture>
             </section>
         </div>
     </div>
