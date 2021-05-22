@@ -4,6 +4,10 @@
       text-align: left;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 160px;
+  }
 }
 
 .about-us__wrapper {

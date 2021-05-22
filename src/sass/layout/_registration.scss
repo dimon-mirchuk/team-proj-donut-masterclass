@@ -21,6 +21,14 @@
 // }
 .registration {
   position: relative;
+
+  padding-bottom: 27px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 51px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 77px;
+  }
 }
 .registration__information {
   font-weight: 500;
