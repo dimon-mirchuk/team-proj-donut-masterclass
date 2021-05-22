@@ -6,6 +6,7 @@ $black-color: #000000;
 $placeholder-color: rgba(171, 129, 108, 0.5);
 $main-bg-color: #fffff9;
 $secondary-bg-color: #fef3e4;
+$secondary-bg-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 $button-color: #ab816c;
 $icon-color: #674d40;
 $accent-color: #876655;
@@ -14,8 +15,8 @@ $warning-color: #ff0000;
 // Sizes
 
 $mobile: 320px;
-$mobile-max: 768.9px;
-$tablet: 769px;
+$mobile-max: 767.9px;
+$tablet: 768px;
 $tablet-max: 1279.9px;
 $desktop: 1280px;
 
