@@ -99,7 +99,9 @@
 
 .program-list {
   padding: 0;
-  // margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
 }
 .program-list + .program-list {
   margin-left: 6px;
