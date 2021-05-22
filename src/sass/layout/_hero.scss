@@ -143,8 +143,8 @@
   position: absolute;
   z-index: -2;
   @media screen and (max-width: $mobile-max) {
-    top: -32%;
-    left: -5%;
+    top: -66px;
+    left: -27px;
   }
 
   @media screen and (min-width: $tablet) {
