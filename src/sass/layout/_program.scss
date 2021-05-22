@@ -1,0 +1,310 @@
+.program-section {
+  padding-bottom: 26px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 68px;
+  }
+}
+.program {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.program--right {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+}
+
+.program__title {
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.program__text {
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.list-text {
+  // margin: 0;
+  padding: 0;
+}
+.list-text__item {
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.list-text__icon {
+  display: inline-block;
+  height: 18px;
+  width: 19px;
+}
+.program__slide-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.hidden-text {
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.program__slide-btn {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $button-color;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+// .hidden-content {
+//   display: none;
+
+//   @media screen and (min-width: $desktop) {
+//     display: block;
+//   }
+// }
+
+// .actions {
+//   padding: 0;
+// }
+
+// Features
+
+.program-list {
+  padding: 0;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+}
+.program-list + .program-list {
+  margin-left: 6px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 32px;
+  }
+}
+.program-list__item {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background-color: $secondary-bg-color;
+  box-shadow: $secondary-bg-shadow;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  padding: 49px 0 9px;
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    width: 180px;
+    height: 180px;
+    padding: 63px 0 11px;
+  }
+}
+.program-list__item:not(:last-child) {
+  margin-bottom: 57px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 61px;
+  }
+}
+.donut-one::before {
+  content: '';
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  display: block;
+  height: 84px;
+  width: 77px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/program-donuts/mobile-donut-1.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program-donuts/mobile-donut-1@2x.png);
+  }
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: $desktop) {
+    height: 107px;
+    width: 97px;
+    top: -42px;
+    background-image: url(../images/program-donuts/desktop-donut-1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-donuts/desktop-donut-1@2x.png);
+    }
+  }
+}
+.donut-two {
+  margin-top: 25px;
+}
+.donut-two::before {
+  content: '';
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  display: block;
+  height: 84px;
+  width: 77px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/program-donuts/mobile-donut-2.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program-donuts/mobile-donut-2@2x.png);
+  }
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: $desktop) {
+    height: 107px;
+    width: 97px;
+    top: -42px;
+
+    background-image: url(../images/program-donuts/desktop-donut-2.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-donuts/desktop-donut-2@2x.png);
+    }
+  }
+}
+.donut-three::before {
+  content: '';
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  display: block;
+  height: 84px;
+  width: 77px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/program-donuts/mobile-donut-3.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program-donuts/mobile-donut-3@2x.png);
+  }
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: $desktop) {
+    height: 107px;
+    width: 97px;
+    top: -42px;
+
+    background-image: url(../images/program-donuts/desktop-donut-3.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-donuts/desktop-donut-3@2x.png);
+    }
+  }
+}
+.donut-four::before {
+  content: '';
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  display: block;
+  height: 84px;
+  width: 77px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/program-donuts/mobile-donut-4.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/program-donuts/mobile-donut-4@2x.png);
+  }
+
+  transform: translateX(-50%);
+
+  @media screen and (min-width: $desktop) {
+    height: 107px;
+    width: 97px;
+    top: -42px;
+
+    background-image: url(../images/program-donuts/desktop-donut-4.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program-donuts/desktop-donut-4@2x.png);
+    }
+  }
+}
+.program-list__icon {
+  display: block;
+  height: 18px;
+  width: 19px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 13px;
+
+  @media screen and (min-width: $desktop) {
+    height: 29px;
+    width: 30px;
+    margin-top: 17px;
+  }
+}
+.program-list__item-title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+.program-list__text {
+  margin-top: 13px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
