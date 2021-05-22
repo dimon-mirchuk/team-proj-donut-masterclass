@@ -37,6 +37,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  align-items: center;
 
   @media screen and (min-width: $desktop) {
     font-size: 18px;
@@ -44,12 +45,9 @@
   }
 }
 .list__text-item-icon {
-  display: block;
+  display: inline-block;
   height: 18px;
   width: 19px;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 13px;
 }
 .slide-text {
   font-family: Montserrat;
