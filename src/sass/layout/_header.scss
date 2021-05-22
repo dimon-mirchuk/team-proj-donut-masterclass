@@ -1,0 +1,138 @@
+// .page-header {
+//   @media screen and (min-width: $desktop) {
+//     background-image: url(../images/header-spoon/desktop-spoon.png);
+//     background-position: -60px 166px;
+//     background-repeat: no-repeat;
+//     background-size: 142px;
+
+//     @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       .page-header {
+//         background-image: url(../images/header-spoon/desktop-spoon2x.png);
+//       }
+//     }
+//   }
+// }
+
+.body__container--padd-top {
+  padding-top: 15px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 27px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 31px;
+  }
+}
+
+.main-nav {
+  z-index: 2;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $mobile-max) {
+    align-items: center;
+  }
+}
+
+// LOGO
+
+.logo {
+  @media screen and (max-width: $mobile-max) {
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 38px;
+  }
+}
+
+.logo-icon {
+  fill: black;
+  display: block;
+  width: 96px;
+  height: 43px;
+
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+// SITE-NAV
+
+.site-nav {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: $tablet-max) {
+  .site-nav {
+    display: none;
+  }
+
+  .menu-container.is-open .site-nav {
+    display: block;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.site-nav__link {
+  color: black;
+}
+
+// BURGER
+
+.menu-button {
+  width: 30px;
+  height: 18px;
+  padding: 0;
+  margin-left: auto;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-button.is-open {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-button__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-button__cross-icon {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__cross-icon {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__menu-icon {
+  display: none;
+}
