@@ -2,7 +2,7 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -109,7 +109,7 @@ button {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -142,7 +142,10 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .page-header .page-header {
     background-image: url(../../src/images/header-spoon/desktop-spoon2x.png);
   }
@@ -160,7 +163,10 @@ button {
   }
 }
 
-@media screen and (max-width: 768.9px) and (max-width: 768.9px) and (min-device-pixel-ratio: 2), screen and (max-width: 768.9px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768.9px) and (min-resolution: 192dpi), screen and (max-width: 768.9px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768.9px) and (max-width: 768.9px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 768.9px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 768.9px) and (min-resolution: 192dpi),
+  screen and (max-width: 768.9px) and (min-resolution: 2dppx) {
   .body__container--bgi .body__container--bgi {
     background-image: url(../../src/images/header-donuts/mobile-pic-donuts@2x.png);
     background-size: 120px;
@@ -175,7 +181,10 @@ button {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279.9px) and (min-width: 769px) and (max-width: 1279.9px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1279.9px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1279.9px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (max-width: 1279.9px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (max-width: 1279.9px) and (min-width: 769px) and (max-width: 1279.9px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (max-width: 1279.9px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (max-width: 1279.9px) and (min-resolution: 192dpi),
+  screen and (min-width: 769px) and (max-width: 1279.9px) and (min-resolution: 2dppx) {
   .body__container--bgi .body__container--bgi {
     background-image: url(../../src/images/header-donuts/tablet-pic-donuts@2x.png);
   }
@@ -203,15 +212,15 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768.9px) {
   .main-nav {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -221,7 +230,7 @@ button {
     left: 50%;
     top: 7px;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -354,7 +363,10 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero::after {
     background-image: url(../../src/images/header-donuts/desktop-pic-donuts@2x.png);
   }
@@ -415,11 +427,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: #ffffff;
@@ -436,8 +448,8 @@ button {
 @media screen and (max-width: 768.9px) {
   .social-links {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -470,23 +482,29 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links__link:hover, .social-links__link:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   background-color: #876655;
 }
 
@@ -516,7 +534,8 @@ button {
   }
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #876655;
 }
 /*# sourceMappingURL=main.css.map */

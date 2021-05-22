@@ -34,6 +34,18 @@
   transition: fill $duration $cubic;
 }
 
+.social-links__icon {
+  @media screen and (max-width: $tablet-max) {
+    width: 19px;
+    height: 15px;
+  }
+
+  height: 19px;
+  width: 24px;
+  fill: $main-text-color;
+  transition: fill $duration $cubic;
+}
+
 .social-links__link {
   display: flex;
   justify-content: center;
