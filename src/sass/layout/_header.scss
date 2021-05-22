@@ -101,14 +101,17 @@
 // BURGER
 
 .menu-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 18px;
   padding: 0;
-  margin-left: auto;
 
   border: 0;
   background-color: transparent;
   cursor: pointer;
+  z-index: 10;
 
   @media screen and (min-width: $desktop) {
     display: none;
