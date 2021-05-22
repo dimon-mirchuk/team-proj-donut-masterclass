@@ -96,12 +96,13 @@
 .right {
   padding: 20px 0;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  justify-content: center;
 }
 
 .program-list {
   padding: 0;
-  margin-left: auto;
+  // margin-left: auto;
 }
 .program-list + .program-list {
   margin-left: 6px;
