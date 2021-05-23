@@ -28,11 +28,19 @@
 .back_to_top {
   position: fixed;
   display: none;
-  left: 5%;
+  right: 15%;
   bottom: 10%;
   width: 50px;
   height: 50px;
   z-index: 10;
+
+  @media screen and (min-width: $tablet) {
+    right: 10%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 5%;
+  }
 }
 
 .back_to_top-show {
