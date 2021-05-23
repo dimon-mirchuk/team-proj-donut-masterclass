@@ -1,14 +1,21 @@
 .body__background {
-  background-size: 100% 460px, 100% 1430px;
+  background-size: 100% 460px, 100% 1215px;
   background-repeat: no-repeat;
-  background-position: center top, center bottom 216px;
-  background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+  background-position: top, center bottom 215px;
+  background-image: url(../images/background/bg-top-mobile.svg),
+    url(../images/background/bg-bottom-mobile.svg);
 
   @media screen and (min-width: $tablet) {
+    background-size: 100% 769px, 100% 1260px;
     background-position: center top, center bottom 63px;
+    background-image: url(../images/background/bg-top-tablet.svg),
+      url(../images/background/bg-bottom-tablet.svg);
   }
 
   @media screen and (min-width: $desktop) {
+    background-size: 100% 1280px, 100% 1285px;
     background-position: center top, center bottom -101px;
+    background-image: url(../images/background/bg-top-desktop.svg),
+      url(../images/background/bg-bottom-desktop.svg);
   }
 }

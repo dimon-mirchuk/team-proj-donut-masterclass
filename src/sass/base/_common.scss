@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
 h1,
 h2,
 h3,
@@ -49,6 +54,7 @@ button {
   line-height: 1.25;
   color: $main-text-color;
   background-color: $main-bg-color;
+  // overflow: hidden;
 
   @media screen and (min-width: $desktop) {
     font-size: 18px;
