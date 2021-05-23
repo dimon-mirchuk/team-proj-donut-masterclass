@@ -1,10 +1,21 @@
 .about-us__section {
+<<<<<<< HEAD
   padding-bottom: 26px;
   @media screen and (min-width: $tablet) {
     padding-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-bottom: 68px;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: flex-end;
+>>>>>>> main
   }
 
   & .section__title {
@@ -12,13 +23,18 @@
       text-align: left;
     }
   }
+<<<<<<< HEAD
+=======
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 68px;
+  }
+>>>>>>> main
 }
 
 .about-us__wrapper {
   @media screen and (min-width: $tablet) {
     width: 336px;
-    margin-left: auto;
-    position: relative;
   }
 
   @media screen and (min-width: $desktop) {
@@ -37,45 +53,17 @@
 .about-us__link {
   @extend %moreless;
 }
-.about-us__wrapper::before {
-  height: 290px;
-  content: '';
-  display: block;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../images/about-us/mobile-box-cofee-donuts.png');
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/about-us/mobile-box-cofee-donuts@2x.png');
-  }
-
+.about-us__img {
   @media screen and (min-width: $tablet) {
+    margin-right: 25px;
     position: absolute;
     top: 7px;
-    right: calc(100% + 24px);
-
-    width: 330px;
-    height: 352px;
-
-    background-image: url('../images/about-us/tablet-box-cofee-donuts.png');
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/about-us/tablet-box-cofee-donuts@2x.png');
-    }
+    left: -56px;
   }
 
   @media screen and (min-width: $desktop) {
-    top: -64px;
-    right: calc(100% + 76px);
-
-    width: 512px;
-    height: 547px;
-
-    background-image: url('../images/about-us/desktop-box-cofee-donuts.png');
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/about-us/desktop-box-cofee-donuts@2x.png');
-    }
+    margin-right: 76px;
+    top: -70px;
+    left: -156px;
   }
 }
