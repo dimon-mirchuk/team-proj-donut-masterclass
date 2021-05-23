@@ -26,13 +26,17 @@
 }
 
 .back_to_top {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
   position: fixed;
   display: none;
   right: 15%;
-  bottom: 10%;
+  bottom: 15%;
   width: 50px;
   height: 50px;
   z-index: 10;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet) {
     right: 10%;
@@ -44,6 +48,9 @@
 }
 
 .back_to_top-show {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
   display: block;
 }
 
