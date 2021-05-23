@@ -1,0 +1,5 @@
+@mixin animated($animate, $function: $cubic, $duration: $duration) {
+  transition-property: $animate;
+  transition-timing-function: $function;
+  transition-duration: $duration;
+}
