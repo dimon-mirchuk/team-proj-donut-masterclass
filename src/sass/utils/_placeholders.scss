@@ -1,0 +1,17 @@
+%moreless {
+  font-family: $secondary-font;
+  font-size: 18px;
+  line-height: 1.25;
+  color: $button-color;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+%field {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $placeholder-color;
+}
