@@ -124,18 +124,27 @@
     width: 110px;
     height: 110px;
 
-    @media screen and (min-width: 433px) {
-      width: 129px;
-      height: 129px;
+    @media screen and (min-width: 365px) {
+      width: 118px;
+      height: 118px;
     }
 
-    @media screen and (min-width: 544px) {
+    @media screen and (min-width: 455px) {
+      width: 133px;
+      height: 133px;
+    }
+    @media screen and (min-width: 545px) {
       width: 148px;
       height: 148px;
     }
-    @media screen and (min-width: 656px) {
-      width: 167px;
-      height: 167px;
+
+    @media screen and (min-width: 635px) {
+      width: 163px;
+      height: 163px;
+    }
+    @media screen and (min-width: 725px) {
+      width: 178px;
+      height: 178px;
     }
 
     @media screen and (min-width: $tablet) {
