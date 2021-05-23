@@ -2,7 +2,6 @@
   position: relative;
   z-index: 1;
   @media screen and (max-width: $mobile-max) {
-    padding-top: 52px;
     padding-left: 33px;
     padding-right: 33px;
     text-align: center;
@@ -143,7 +142,7 @@
   position: absolute;
   z-index: -2;
   @media screen and (max-width: $mobile-max) {
-    top: -66px;
+    top: -55%;
     left: -27px;
   }
 
@@ -155,6 +154,8 @@
   @media screen and (min-width: $desktop) {
     right: -143%;
     top: -60%;
+
+    pointer-events: none;
   }
 }
 
