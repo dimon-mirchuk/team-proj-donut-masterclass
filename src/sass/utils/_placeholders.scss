@@ -1,7 +1,8 @@
 %moreless {
   font-family: $secondary-font;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 3.61;
+  line-height: 1.25;
   color: $button-color;
 
   @media screen and (min-width: $desktop) {

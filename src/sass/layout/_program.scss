@@ -81,15 +81,7 @@
 }
 
 .program__slide-btn {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  color: $button-color;
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+  @extend %moreless;
 }
 
 // .hidden-content {
