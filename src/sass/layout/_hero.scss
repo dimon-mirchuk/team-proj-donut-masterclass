@@ -79,6 +79,7 @@
 // BUTTON
 
 .button--register {
+  @extend .button;
   margin-bottom: 45px;
 
   @media screen and (min-width: $tablet) {
