@@ -13,6 +13,8 @@
   &.is-open {
     display: flex;
     justify-content: center;
+    position: fixed;
+    overflow-y: scroll;
 
     @media screen and (min-width: $desktop) {
       display: none;
@@ -50,6 +52,10 @@
   .mobile-menu__item:hover & {
     color: $accent-color;
   }
+}
+
+.lock-scroll {
+  overflow: hidden;
 }
 
 // .mobile-menu__button {
