@@ -30,11 +30,6 @@
 }
 .program__text {
   margin-bottom: 10px;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 .list-text {
   // margin: 0;
@@ -44,22 +39,11 @@
   margin-bottom: 10px;
 
   align-items: center;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 .list-text__icon {
   display: inline-block;
   height: 18px;
   width: 19px;
-}
-.program__slide-text {
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 
 .hidden-text {
