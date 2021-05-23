@@ -2,7 +2,6 @@
   position: relative;
   z-index: 1;
   @media screen and (max-width: $mobile-max) {
-    padding-top: 52px;
     padding-left: 33px;
     padding-right: 33px;
     text-align: center;
@@ -79,6 +78,7 @@
 // BUTTON
 
 .button--register {
+  @extend .button;
   margin-bottom: 45px;
 
   @media screen and (min-width: $tablet) {
@@ -143,8 +143,8 @@
   position: absolute;
   z-index: -2;
   @media screen and (max-width: $mobile-max) {
-    top: -32%;
-    left: -5%;
+    top: -55%;
+    left: -27px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -155,6 +155,8 @@
   @media screen and (min-width: $desktop) {
     right: -143%;
     top: -60%;
+
+    pointer-events: none;
   }
 }
 

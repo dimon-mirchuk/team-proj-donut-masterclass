@@ -1,3 +1,12 @@
+.contacts {
+  padding-bottom: 34px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 37px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 74px;
+  }
+}
 .contact__text {
   text-align: center;
   margin-bottom: 20px;
@@ -10,6 +19,7 @@
 }
 
 .contact__button {
+  @extend .button;
   margin-left: auto;
   margin-right: auto;
   margin-top: 27px;
@@ -41,7 +51,5 @@
 }
 
 .contact__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(171, 129, 108, 0.5);
+  @extend %field;
 }
