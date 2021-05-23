@@ -30,10 +30,6 @@
 }
 .program__text {
   margin-bottom: 10px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 
   @media screen and (min-width: $desktop) {
     font-size: 18px;
@@ -46,10 +42,7 @@
 }
 .list-text__item {
   margin-bottom: 10px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+
   align-items: center;
 
   @media screen and (min-width: $desktop) {
@@ -63,11 +56,6 @@
   width: 19px;
 }
 .program__slide-text {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-
   @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 22px;
@@ -289,10 +277,6 @@
 }
 .program-list__text {
   margin-top: 13px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .flex {
