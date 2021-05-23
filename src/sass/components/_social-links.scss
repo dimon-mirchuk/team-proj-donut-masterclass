@@ -31,7 +31,7 @@
   width: 24px;
   fill: $main-text-color;
 
-  transition: fill $duration $cubic;
+  @include animated(fill);
 }
 
 .social-links__icon {
@@ -43,7 +43,7 @@
   height: 19px;
   width: 24px;
   fill: $main-text-color;
-  transition: fill $duration $cubic;
+  @include animated(fill);
 }
 
 .social-links__link {
@@ -54,7 +54,8 @@
   height: 100%;
   border-radius: 50%;
 
-  transition: background-color $duration $cubic, transform $duration $cubic;
+  @include animated(background-color);
+  @include animated(transform);
 
   &:hover,
   &:focus {
