@@ -1,5 +1,6 @@
 .reviews {
   padding-bottom: 30px;
+  background-color: rgb(203, 230, 203);
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 40px;
@@ -11,16 +12,25 @@
 
 .reviews__container {
   position: relative;
+  padding-top: 24px;
   min-width: 290px;
   max-width: 626px;
+  outline: 3px solid lightgreen;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+  }
 }
 
 .reviews__title {
-  @media screen and (max-width: $mobile-max) {
-    margin-bottom: 0;
+  line-height: 1.25;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 34px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 24px;
+    margin-bottom: 42px;
   }
 }
 
@@ -142,14 +152,20 @@
   }
 }
 
+.feedback__rate {
+  margin-bottom: 12px;
+}
+
 .feedback__name {
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.64;
+  margin-bottom: 16px;
 
   @media screen and (min-width: $desktop) {
     font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 
