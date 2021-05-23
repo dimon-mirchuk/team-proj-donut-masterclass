@@ -30,15 +30,6 @@
 }
 .program__text {
   margin-bottom: 10px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 .list-text {
   // margin: 0;
@@ -46,32 +37,13 @@
 }
 .list-text__item {
   margin-bottom: 10px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
 
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
+  align-items: center;
 }
 .list-text__icon {
   display: inline-block;
   height: 18px;
   width: 19px;
-}
-.program__slide-text {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 22px;
-  }
 }
 
 .hidden-text {
@@ -81,15 +53,7 @@
 }
 
 .program__slide-btn {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  color: $button-color;
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
+  @extend %moreless;
 }
 
 // .hidden-content {
@@ -297,10 +261,6 @@
 }
 .program-list__text {
   margin-top: 13px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .flex {

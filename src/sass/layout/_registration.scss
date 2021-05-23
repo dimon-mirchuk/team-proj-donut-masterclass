@@ -68,10 +68,7 @@
   }
 }
 .registration__field::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-
-  color: $placeholder-color;
+  @extend %field;
 }
 .registration__field {
   height: 22px;
@@ -93,6 +90,7 @@
   border-color: $warning-color;
 }
 .registration__button {
+  @extend .button;
   margin-bottom: 34px;
   @media screen and (min-width: $tablet) {
     margin-left: 25px;
