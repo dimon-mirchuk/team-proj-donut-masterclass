@@ -116,6 +116,20 @@
     width: 110px;
     height: 110px;
 
+    @media screen and (min-width: 433px) {
+      width: 129px;
+      height: 129px;
+    }
+
+    @media screen and (min-width: 544px) {
+      width: 148px;
+      height: 148px;
+    }
+    @media screen and (min-width: 656px) {
+      width: 167px;
+      height: 167px;
+    }
+
     @media screen and (min-width: $tablet) {
       width: 186px;
       height: 186px;
