@@ -58,13 +58,33 @@
   }
 }
 
+.body__container--padd-top::before {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 30%;
+    right: 110%;
+    content: '';
+    width: 264px;
+    height: 450px;
+    background-image: url(../images/header-spoon/desktop-spoon.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header-spoon/desktop-spoon2x.png);
+      background-size: 264px;
+    }
+  }
+}
+
 .body__container--padd-top::after {
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: -30%;
     right: -40%;
-    content: url(../images/header-donuts/desktop-pic-donuts.png);
+    content: '';
+    width: 795px;
+    height: 831px;
     pointer-events: none;
+    background-image: url(../images/header-donuts/desktop-pic-donuts.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header-donuts/desktop-pic-donuts@2x.png);
