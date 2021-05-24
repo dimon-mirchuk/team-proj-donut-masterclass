@@ -1,7 +1,6 @@
 .mobile-menu {
   margin: 0 auto;
   position: absolute;
-  display: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,11 +9,20 @@
   z-index: 3;
   background: rgba(254, 243, 228, 0.9);
 
+  transform: translateY(-100%);
+  transition: transform $duration $cubic;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1279px;
+  }
+
   &.is-open {
     display: flex;
     justify-content: center;
     position: fixed;
     overflow-y: scroll;
+
+    transform: translatey(0);
 
     @media screen and (min-width: $desktop) {
       display: none;
@@ -23,6 +31,17 @@
     @media screen and (min-width: $tablet) {
       max-width: 1279px;
     }
+  }
+}
+.mobile-menu__logo {
+  display: block;
+  text-align: center;
+  fill: $main-text-color;
+  transition: fill $duration $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
 }
 
