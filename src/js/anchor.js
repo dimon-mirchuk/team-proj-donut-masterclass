@@ -1,6 +1,12 @@
-$('.mobile-menu__link').on('click', function () {
-  if ($('.mobile-menu').hasClass('is-open')) {
-    $('.mobile-menu').removeClass('is-open');
-    $('body').removeClass('lock-scroll');
-  }
-});
+const links = document.querySelectorAll('.mobile-menu__link');
+const menu = document.querySelector('.mobile-menu');
+const menuBtnRef = document.querySelector('[data-menu-button]');
+links.forEach(link =>
+  link.addEventListener('click', () => {
+    if (menu.classList.contains('is-open')) {
+      menu.classList.remove('is-open');
+      document.body.classList.remove('lock-scroll');
+      menuBtnRef.classList.remove('is-open');
+    }
+  }),
+);
