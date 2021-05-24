@@ -8,6 +8,9 @@
   }
 }
 .program {
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 21px;
+  }
   @media screen and (min-width: $tablet) {
     width: 50%;
   }
@@ -29,16 +32,29 @@
   }
 }
 .program__text {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 21px;
+  }
 }
 .list-text {
   // margin: 0;
-  padding: 0;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 480px) and (max-width: $mobile-max) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 21px;
+  }
 }
 .list-text__item {
-  margin-bottom: 10px;
-
   align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .list-text__icon {
   display: inline-block;
