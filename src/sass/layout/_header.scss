@@ -57,7 +57,7 @@
 }
 
 .logo-icon {
-  fill: black;
+  fill: $main-text-color;
   display: block;
   width: 96px;
   height: 43px;
@@ -96,7 +96,14 @@
 }
 
 .site-nav__link {
-  color: black;
+  color: $main-text-color;
+
+  transition: color $duration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 // BURGER

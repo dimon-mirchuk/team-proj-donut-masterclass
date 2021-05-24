@@ -117,7 +117,7 @@
   border-radius: 50%;
   overflow: hidden;
 
-  transition: box-shadow 250ms $cubic;
+  transition: box-shadow $duration $cubic;
 
   @media screen and (min-width: $desktop) {
     width: 136px;
@@ -171,7 +171,7 @@
 .feedback__rate {
   margin-bottom: 12px;
   transform: scale(1);
-  transition: transform 250ms $cubic;
+  transition: transform $duration $cubic;
 
   .reviews__link:hover &,
   .reviews__link:focus & {
@@ -199,7 +199,7 @@
   color: $main-text-color;
   opacity: 0.4;
 
-  transition: opacity 250ms $cubic;
+  transition: opacity $duration $cubic;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 35px;
