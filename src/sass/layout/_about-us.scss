@@ -41,6 +41,11 @@
     margin-bottom: 21px;
   }
 }
+.about-us__text--geometry {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
 
 .about-us__link {
   @extend %moreless;
