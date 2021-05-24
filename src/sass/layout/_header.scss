@@ -80,11 +80,10 @@
     position: absolute;
     top: -30%;
     right: -40%;
-    content: '';
+    content: url(../images/header-donuts/desktop-pic-donuts.png);
     width: 795px;
     height: 831px;
     pointer-events: none;
-    background-image: url(../images/header-donuts/desktop-pic-donuts.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header-donuts/desktop-pic-donuts@2x.png);
