@@ -27,6 +27,28 @@
       background-size: 132px;
     }
   }
+
+  // @media screen and (min-width: $desktop) and (max-width: 1499px) {
+  //   background-image: url(../images/header-donuts/desktop-pic-donuts-cut.png);
+  //   background-repeat: no-repeat;
+  //   background-position: 100% 0;
+  // }
+}
+
+@media screen and (min-width: $desktop) and (max-width: 1499px) {
+  .page-header::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: url(../images/header-donuts/desktop-pic-donuts-cut.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header-donuts/desktop-pic-donuts-cut@2x.png);
+      background-size: 719px;
+    }
+  }
 }
 
 .body__container--padd-top {
@@ -76,12 +98,15 @@
 }
 
 .body__container--padd-top::after {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1500px) {
     position: absolute;
     top: -30%;
     right: -40%;
-    content: url(../images/header-donuts/desktop-pic-donuts.png);
+    content: '';
+    width: 795px;
+    height: 831px;
     pointer-events: none;
+    background-image: url(../images/header-donuts/desktop-pic-donuts.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/header-donuts/desktop-pic-donuts@2x.png);
