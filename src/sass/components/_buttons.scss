@@ -26,13 +26,14 @@
 }
 
 .back_to_top {
-  @media screen and (max-width: $mobile) {
-    display: none;
+  @media screen and (max-width: $mobile-max) {
+    width: 30px;
+    height: 30px;
   }
   position: fixed;
   display: none;
   right: 15%;
-  bottom: 15%;
+  bottom: 12%;
   width: 50px;
   height: 50px;
   z-index: 10;
@@ -48,7 +49,7 @@
 }
 
 .back_to_top-show {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 319px) {
     display: none;
   }
   display: block;
@@ -64,6 +65,11 @@
   border-left: 16px solid $accent-color;
   border-bottom: 16px solid $accent-color;
   animation: back_to_top 3s linear infinite;
+
+  @media screen and (max-width: $mobile-max) {
+    border-left: 10px solid $accent-color;
+    border-bottom: 10px solid $accent-color;
+  }
 }
 .back_to_top:after {
   animation: back_to_top 3s linear infinite -1.5s;
@@ -86,6 +92,7 @@
     transform: translate(0, -33px) rotate(135deg);
   }
 }
+
 .hide-and-seek {
   display: none;
 }
