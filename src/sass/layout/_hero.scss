@@ -50,6 +50,7 @@
   z-index: -1;
   margin-bottom: 3px;
   font-family: $secondary-font;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
 
@@ -139,35 +140,35 @@
 //   }
 // }
 
-.donuts-bgi {
-  position: absolute;
-  z-index: -2;
-  @media screen and (max-width: $mobile-max) {
-    top: -55%;
-    left: -27px;
-  }
+// .donuts-bgi {
+//   position: absolute;
+//   z-index: -2;
+//   @media screen and (max-width: $mobile-max) {
+//     top: -55%;
+//     left: -27px;
+//   }
 
-  @media screen and (min-width: $tablet) {
-    right: -150%;
-    top: -35%;
-  }
+//   @media screen and (min-width: $tablet) {
+//     right: -150%;
+//     top: -35%;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    right: -143%;
-    top: -60%;
+//   @media screen and (min-width: $desktop) {
+//     right: -143%;
+//     top: -60%;
 
-    pointer-events: none;
-  }
-}
+//     pointer-events: none;
+//   }
+// }
 
-.spoon-bgi {
-  @media screen and (max-width: $tablet-max) {
-    display: none;
-  }
+// .spoon-bgi {
+//   @media screen and (max-width: $tablet-max) {
+//     display: none;
+//   }
 
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 15%;
-    left: -72%;
-  }
-}
+//   @media screen and (min-width: $desktop) {
+//     position: absolute;
+//     top: 15%;
+//     left: -72%;
+//   }
+// }

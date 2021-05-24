@@ -60,9 +60,11 @@
   text-align: center;
   line-height: 1.25;
   @media screen and (min-width: $tablet) {
-    margin-bottom: 13px;
     max-width: 292px;
     text-align: left;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 13px;
     font-size: 18px;
     line-height: 1.22;
   }
@@ -156,7 +158,7 @@
   }
 }
 .registration__form-container:first-child {
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   display: flex;
   flex-direction: column;
   @media screen and (min-width: $tablet) {
