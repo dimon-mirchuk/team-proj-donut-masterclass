@@ -12,7 +12,6 @@
 .reviews__container {
   position: relative;
   padding-top: 24px;
-  min-width: 290px;
   max-width: 626px;
 
   @media screen and (min-width: $desktop) {
@@ -124,25 +123,25 @@
     width: 110px;
     height: 110px;
 
-    @media screen and (min-width: 365px) {
+    @media screen and (min-width: $mobile-responsive-1) {
       width: 118px;
       height: 118px;
     }
 
-    @media screen and (min-width: 455px) {
+    @media screen and (min-width: $mobile-responsive-2) {
       width: 133px;
       height: 133px;
     }
-    @media screen and (min-width: 545px) {
+    @media screen and (min-width: $mobile-responsive-3) {
       width: 148px;
       height: 148px;
     }
 
-    @media screen and (min-width: 635px) {
+    @media screen and (min-width: $mobile-responsive-4) {
       width: 163px;
       height: 163px;
     }
-    @media screen and (min-width: 725px) {
+    @media screen and (min-width: $mobile-responsive-5) {
       width: 178px;
       height: 178px;
     }

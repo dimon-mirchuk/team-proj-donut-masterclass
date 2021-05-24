@@ -79,6 +79,25 @@
 .program-list + .program-list {
   margin-left: 6px;
 
+  @media screen and (min-width: $mobile-responsive-1) {
+    margin-left: 11px;
+  }
+
+  @media screen and (min-width: $mobile-responsive-2) {
+    margin-left: 16px;
+  }
+
+  @media screen and (min-width: $mobile-responsive-3) {
+    margin-left: 21px;
+  }
+
+  @media screen and (min-width: $mobile-responsive-4) {
+    margin-left: 26px;
+  }
+  @media screen and (min-width: $mobile-responsive-5) {
+    margin-left: 32px;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-left: 15px;
   }
@@ -86,6 +105,7 @@
     margin-left: 32px;
   }
 }
+
 .program-list__item {
   width: 142px;
   height: 142px;
@@ -98,45 +118,31 @@
 
   padding: 49px 0 9px;
   position: relative;
-}
 
-.program-list__item.donut-one {
-  width: 142px;
-  height: 142px;
-  border-radius: 50%;
-  background-color: $secondary-bg-color;
-  box-shadow: $secondary-bg-shadow;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-  padding: 49px 0 9px;
-  position: relative;
-
-  @media screen and (min-width: 365px) {
+  @media screen and (min-width: $mobile-responsive-1) {
     width: 150px;
     height: 150px;
     padding: 54px 0 9px;
   }
 
-  @media screen and (min-width: 455px) {
+  @media screen and (min-width: $mobile-responsive-2) {
     width: 165px;
     height: 165px;
     padding: 60px 0 9px;
   }
-  @media screen and (min-width: 545px) {
+  @media screen and (min-width: $mobile-responsive-3) {
     width: 180px;
     height: 180px;
     padding: 66px 0 9px;
   }
 
-  @media screen and (min-width: 635px) {
+  @media screen and (min-width: $mobile-responsive-4) {
     width: 195px;
     height: 195px;
     padding: 72px 0 9px;
   }
 
-  @media screen and (min-width: 725px) {
+  @media screen and (min-width: $mobile-responsive-5) {
     width: 210px;
     height: 210px;
     padding: 80px 0 9px;
@@ -173,7 +179,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  // background-image: url(../images/program-donuts/pic-2.svg);
   background-image: url(../images/program-donuts/mobile-donut-1.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/program-donuts/mobile-donut-1@2x.png);
@@ -181,53 +186,7 @@
 
   transform: translateX(-50%);
 
-  @media screen and (min-width: 365px) {
-    top: -36px;
-    height: 92px;
-    width: 85px;
-  }
-
-  @media screen and (min-width: 455px) {
-    top: -38px;
-    height: 100px;
-    width: 93px;
-  }
-  @media screen and (min-width: 545px) {
-    top: -40px;
-    height: 108px;
-    width: 101px;
-  }
-
-  @media screen and (min-width: 635px) {
-    top: -42px;
-    height: 116px;
-    width: 109px;
-  }
-  @media screen and (min-width: 725px) {
-    top: -44px;
-    height: 122px;
-    width: 115px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    top: -34px;
-    height: 84px;
-    width: 77px;
-  }
   @media screen and (min-width: $desktop) {
-    height: 107px;
-    width: 97px;
-    top: -42px;
-    background-image: url(../images/program-donuts/desktop-donut-1.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/program-donuts/desktop-donut-1@2x.png);
-    }
-  }
-
-  @media screen and (min-width: $desktop) {
-    height: 107px;
-    width: 97px;
-    top: -42px;
     background-image: url(../images/program-donuts/desktop-donut-1.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program-donuts/desktop-donut-1@2x.png);
@@ -257,10 +216,6 @@
   transform: translateX(-50%);
 
   @media screen and (min-width: $desktop) {
-    height: 107px;
-    width: 97px;
-    top: -42px;
-
     background-image: url(../images/program-donuts/desktop-donut-2.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program-donuts/desktop-donut-2@2x.png);
@@ -287,10 +242,6 @@
   transform: translateX(-50%);
 
   @media screen and (min-width: $desktop) {
-    height: 107px;
-    width: 97px;
-    top: -42px;
-
     background-image: url(../images/program-donuts/desktop-donut-3.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program-donuts/desktop-donut-3@2x.png);
@@ -317,14 +268,50 @@
   transform: translateX(-50%);
 
   @media screen and (min-width: $desktop) {
-    height: 107px;
-    width: 97px;
-    top: -42px;
-
     background-image: url(../images/program-donuts/desktop-donut-4.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/program-donuts/desktop-donut-4@2x.png);
     }
+  }
+}
+.donut-one::before,
+.donut-two::before,
+.donut-three::before,
+.donut-four::before {
+  @media screen and (min-width: $mobile-responsive-1) {
+    top: -36px;
+    height: 92px;
+    width: 85px;
+  }
+  @media screen and (min-width: $mobile-responsive-2) {
+    top: -38px;
+    height: 100px;
+    width: 93px;
+  }
+  @media screen and (min-width: $mobile-responsive-3) {
+    top: -40px;
+    height: 108px;
+    width: 101px;
+  }
+  @media screen and (min-width: $mobile-responsive-4) {
+    top: -42px;
+    height: 116px;
+    width: 109px;
+  }
+  @media screen and (min-width: $mobile-responsive-5) {
+    top: -44px;
+    height: 122px;
+    width: 115px;
+  }
+  @media screen and (min-width: $tablet) {
+    top: -34px;
+    height: 84px;
+    width: 77px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 107px;
+    width: 97px;
+    top: -42px;
   }
 }
 .program-list__icon {
