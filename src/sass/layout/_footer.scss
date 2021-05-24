@@ -24,15 +24,39 @@
   line-height: 1.25;
   color: $main-text-color;
 }
-.flour {
+
+.footer {
+  position: relative;
+}
+.footer__address::after {
+  content: '';
+  height: 64px;
+  width: 87px;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -3;
-
-  @media screen and (min-width: $tablet) {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/flour/mobile-flour.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/flour/mobile-flour@2x.png);
   }
-}
-.footer {
-  position: relative;
+  @media screen and (min-width: $tablet) {
+    height: 144px;
+    width: 147px;
+    background-image: url(../images/flour/tablet-flour.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/flour/tablet-flour@2x.png);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 184px;
+    width: 319px;
+    background-image: url(../images/flour/desktop-flour.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/flour/desktop-flour@2x.png);
+    }
+  }
 }
